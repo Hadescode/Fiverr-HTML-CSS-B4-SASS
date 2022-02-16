@@ -1,0 +1,155 @@
+.tools{
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 64px;
+    margin-top: 8%;
+    .tools__content{
+        .tools_content_right{ 
+            padding-bottom: 100px;
+            h2{
+                @include styleText($color-black-0,$fs-h2,$fw-bold);
+                padding-bottom: 20px;
+                padding-top: 40px;
+                line-height: 38px;
+            }
+            .tools__items{
+                padding-bottom: 16px;
+            }
+            .tools__items h4::before{
+                content: '';
+                background-image: url(../img/checkmark.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 16px;
+                padding-right: 20px;
+                margin-right: 10px;
+            }
+            h4{
+                @include styleText($color-black-0,$fs-3,$fw-bold-0);
+            }
+            p{
+                @include styleText($color-gray-7,$fs-3,$fw-normal);
+                padding-right: 19%;
+                @media screen and (min-width:1200px) and (max-width:1440px){
+                    padding-right: 8%;
+                }
+                
+            }
+        }
+        .tools_content_left{
+            background-image: url(../img/ipadX2.gif);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 98%;
+            @media screen and (min-width:1200px) and (max-width:1440px){
+                width: 100%;
+                height: 83%;
+            }
+        }
+    }
+    @include responsive('extra-large'){
+        .tools__content{
+            .tools_content_right{
+                p{
+                    @include styleText($color-gray-7,$fs-0,$fw-normal);
+                    padding-right: 0;
+                }
+            }
+            .tools_content_left{
+                background-image: url(../img/ipadX2.gif);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                height: 72%;
+                margin-top: 30px;
+            }
+        }
+    }
+    @include responsive('large'){
+        .tools__content{
+            .tools_content_right{
+                h2{
+                    @include styleText($color-black-0,$fs-h2,$fw-bold);
+                    padding-bottom: 20px;
+                    padding-top: 65px;
+                }
+                h4{
+                    @include styleText($color-black-0,$fs-3,$fw-bold-0);
+                }
+                p{
+                    @include styleText($color-gray-7,$fs-3,$fw-normal);
+                    padding-right: 19%; 
+                }
+            }
+            .tools_content_left{
+                background-image: url(../img/ipadX2.gif);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                height: 56%;
+                margin-top: 65px;
+            }
+        }
+    }
+    @include responsive('medium'){
+        .tools__content{
+            .tools_content_right{
+                padding-bottom: 0px;
+                h2{
+                    @include styleText($color-black-0,$fs-h2,$fw-bold);
+                    padding-bottom: 20px;
+                    padding-top: 12%;
+                }
+                h4{
+                    @include styleText($color-black-0,$fs-3,$fw-bold-0);
+                }
+                p{
+                    @include styleText($color-gray-7,$fs-3,$fw-normal);
+                    padding-right: 19%;
+                }
+            }
+            .tools_content_left{
+                background-image: url(../img/ipadX2.gif);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                height: 60%;
+                padding: 35%;
+            }
+        }
+    }
+    @include responsive('small'){
+        .tools__content{
+            .tools_content_right{
+                padding-bottom: 0px;
+                h2{
+                    @include styleText($color-black-0,$fs-4,$fw-bold);
+                    padding-bottom: 20px;
+                    padding-top: 12%;
+                }
+                h4{
+                    @include styleText($color-black-0,$fs-3,$fw-bold-0);
+                }
+                p{
+                    @include styleText($color-gray-7,$fs-3 - 1,$fw-normal);
+                    padding-right: 0%;
+                }
+            }
+            .tools_content_left{
+                background-image: url(../img/ipadX2.gif);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                height: 60%;
+                padding: 35%;
+            }
+        }
+    }
+}

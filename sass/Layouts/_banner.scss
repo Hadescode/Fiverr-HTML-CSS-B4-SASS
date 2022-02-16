@@ -1,0 +1,74 @@
+.banner{
+    background-image: url(../img/pro_banner_1400px-2x.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    max-width: 1440px;
+    width: 90%;
+    margin: 64px auto;
+    margin-bottom: 64px; // khoảng cách với section TOOLS
+    .banner__content{
+        padding-top: 60px;
+        padding-right: 40%; // responsive ko cần chỉnh pd chỉnh fs,fsw
+        @media (min-width: 1200px) and (max-width: 1440px) { 
+            padding-top: 60px;
+            padding-right: 42%; 
+            padding-left: 5%;
+        } 
+        }
+        .banner__item{
+            padding-bottom:$pd-2;
+            .banner_text::after{
+                content: '';
+                background-image:url(../img/pro-logo.2b919ef.svg);// thêm hình
+                background-size: 84px auto;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 50%;
+                padding-left: 100px;
+                // margin-left: 2px;
+            }
+        }
+        p{
+            @include styleText($color-white-0,$fs-h2 + 6,$fw-normal);
+            padding-bottom: 10px;
+            line-height: 40px;
+        }
+        // ReSpOnSiVe
+        @include responsive('extra-large'){
+            .banner__content{
+                padding-top: 60px;
+                padding-right: 40%;
+                padding-left: 5%;
+            }
+        }
+        @include responsive('large'){//992px
+            .banner__content{
+                padding-top: 60px;
+                padding-right: 24%
+            }
+        }
+        @include responsive('medium'){
+            .banner__content{
+                padding-top: 60px;
+                padding-right: 18%;
+            }
+        }
+        @include responsive('small'){
+            .banner__content{
+                padding-top: 60px;
+                padding-right: 12%;
+                p{
+                    @include styleText($color-white-0,$fs-h2,$fw-normal);
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+ 
+
+
+
+
+

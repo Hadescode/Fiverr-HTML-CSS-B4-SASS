@@ -1,0 +1,72 @@
+// variable color
+$color-black: #000; // default
+$color-black-0: #222325;
+$color-black-1: #404145;
+$color-white-0: #fff; //default
+$color-red-0:#ec5252;
+$color-red-1: #521822;
+$color-red-2:#992337;
+$color-purple: #6e1a52;
+$color-gray-0:rgba(20,23,28,.05);//them
+$color-gray-1: #999;
+$color-gray-2: #b5b6ba;
+$color-gray-3: #cacbcc;
+$color-gray-4: #686f7a;
+$color-gray-5:#F7F8FA;
+$color-gray-6:#62646a;
+$color-gray-7:#7a7d85;// thêm
+$color-gray-8:#b5b6ba;// thêm
+$color-gray-9:#f5f5f5;// thêm
+$color-black-light:#505763;
+$color-white-cream:#f2f3f5;
+$color-black-dark: rgba(20,23,28,.1);
+$color-black-dark-1: rgba(64, 65, 69, 0.5);//them
+$color-yellow: #F4C150;
+$color-blue:#62DBCB;//thêm
+$color-green-1:#1dbf73;
+$color-green-2: #19a463;
+$color-green-3:#02c2a9;// thêm màu
+$color-green-4: #2e6a3c;
+$color-trans:transparent;
+
+// variable font-size
+$fs-0: 14px; //default
+$fs-1: 10px;
+$fs-2: 12px;
+$fs-3: 16px;
+$fs-4: 20px;
+$fs-h2: 24px;
+$fs-h1: 32px;
+//variable margin
+$mg-0: 2px;
+$mg-1: 10px;
+$mg-2: 25px;
+
+//variable border-radius
+$border-radius: 3px;
+
+//variable padding
+$pd-0: 5px; //default
+$pd-1: 10px;
+$pd-2: 20px;
+
+
+//variable line-height
+$line-height-0: 1.43; //default
+
+
+//variable font-weight
+$fw-normal: normal;
+$fw-light: 300;
+$fw-bold-0: 600;
+$fw-bold-1: 700;
+$fw-bold: bold;
+
+
+//break points
+$breakpoints:(
+    'extra-large': 1200px,
+    'large' : 992px,
+    'medium' : 768px,
+    'small' : 576px,
+)

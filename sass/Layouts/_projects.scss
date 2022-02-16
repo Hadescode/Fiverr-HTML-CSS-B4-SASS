@@ -1,0 +1,65 @@
+.projects {
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+    h2 {
+        @include styleText($color-black, $fs-h2, $fw-bold-1);
+        line-height: 38px;
+        padding-bottom: 24px;
+    }
+    
+    .projects__content {
+        .projects__card {
+            box-shadow: 0 1px 5px 1px #00000026;
+            .card-img-top{
+                width: 100%;
+                height: 237px;
+            }
+            .card-body {
+                img {
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .owl-nav button.owl-prev{
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            top: 45%;
+            left: -23px;
+            border-radius: 50%;
+            background-color: white;
+            transform: rotate(-180deg);
+            box-shadow: 0 0 5px #CCC;
+            &:focus{
+                outline: none;
+            }
+        }
+        
+        .owl-nav button.owl-next {
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            top: 45%;
+            right: -22px;
+            border-radius: 50%;
+            background-color: white;
+            box-shadow: 0 0 5px #CCC;
+            &:focus{
+                outline: none;
+            }
+        }
+        .owl-prev i, .owl-next i {
+            display: inline-block;
+            background: url(../../img/arrow-right-black.svg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 16px;
+            height: 16px;
+            margin-top: 5px;
+        }
+    }
+}

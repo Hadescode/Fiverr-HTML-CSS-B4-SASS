@@ -1,0 +1,184 @@
+.comment {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    .carousel {
+        max-width: 1440px;
+        width: 90%;
+        margin: 0 auto;
+        background-color: $color-white-0;
+        .carousel-inner {
+            box-shadow: 1px 0px 1px 1px $color-gray-9;
+            border-radius: 5px;
+            .comment__container {
+                // height: 100%;
+                .comment__content_right {
+                    position: relative;
+                    .comment_sub {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    i {
+                        position: absolute;
+                        width: 80px;
+                        height: 80px;
+                        display: block;
+                        border-radius: 50%;
+                        line-height: 80px;
+                        border: none;
+                        text-align: center;
+                        color: white;
+                        background-color: $color-black-dark-1;
+                        // canh giữa
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        font-size: 30px;
+                    }
+                }
+                .comment__content_left {
+                    p {
+                        @media (min-width: 1200px) and (max-width: 1440px) {
+                            padding-right: 43%;
+                        }
+                        padding-top: 10%;
+                        padding-right: 52%;
+                        line-height: 29px;
+                        @include styleText($color-gray-6, $fs-4 - 2, $fw-normal);
+                    }
+                    span {
+                        display: block;
+                        @include styleText($color-gray-7, $fs-4 - 2, $fw-normal);
+                    }
+                    img {
+                        display: inline-block;
+                        height: 10%;
+                        width: 18%;
+                        padding-top: 11px;
+                        @media (min-width: 1200px) and (max-width: 1440px) {
+                            height: 12%;
+                            width: 20%;
+                        }
+                    }
+                }
+                @include responsive("extra-large") {
+                    .comment__content_left {
+                        p {
+                            padding-top: 10%;
+                            padding-right: 35%;
+                            line-height: 25px;
+                            @include styleText($color-gray-6, $fs-4 - 2, $fw-normal);
+                        }
+                        img {
+                            display: inline-block;
+                            height: 14%;
+                            width: 24%;
+                            padding-top: 11px;
+                        }
+                    }
+                }
+                @include responsive("large") {
+                    .comment__content_left {
+                        p {
+                            padding-top: 10%;
+                            padding-right: 20%;
+                            line-height: 24px;
+                            @include styleText($color-gray-6, $fs-4 - 2, $fw-normal);
+                        }
+                        img {
+                            display: inline-block;
+                            height: 14%;
+                            width: 28%;
+                            padding-top: 11px;
+                        }
+                    }
+                }
+                @include responsive("medium") {
+                    .comment__content_left {
+                        p {
+                            padding-top: 6%;
+                            padding-right: 6%;
+                            line-height: 28px;
+                            @include styleText($color-gray-6, $fs-3, $fw-normal);
+                        }
+                        img {
+                            display: inline-block;
+                            height: 18%;
+                            width: 22%;
+                            padding-top: 11px;
+                        }
+                    }
+                }
+                @include responsive("small") {
+                    .comment__content_left {
+                        p {
+                            padding-top: 6%;
+                            padding-right: 15%;
+                            line-height: 24px;
+                            @include styleText($color-gray-6, $fs-3 - 1, $fw-normal);
+                        }
+                        img {
+                            display: inline-block;
+                            height: 16%;
+                            width: 29%;
+                            padding-top: 11px;
+                            margin-bottom: 10%;
+                        }
+                    }
+                }
+            }
+        }
+        .carousel-control-prev {
+            justify-content: space-between;
+            background-color: $color-white-0;
+            border: 1px solid transparent;
+            border-radius: 50%;
+            height: 48px;
+            width: 48px;
+            top: 50%;
+            opacity: 1;
+            left: -20px;
+            padding-left: 11px;
+            box-shadow: -2px 0px 1px 1px #f5f5f5;
+            @media screen and (max-width: 576px) {
+                top: 48%;
+            }
+            @media screen and (max-width: 518px) {
+                top: 42%;
+            }
+            .carousel-control-prev-icon {
+                background-image: url(../img/arrow-right-gray.svg);
+                background-repeat: no-repeat;
+                width: 16px;
+                height: 22px;
+                transform: rotate(-180deg);
+                opacity: 1;
+            }
+        }
+        .carousel-control-next {
+            justify-content: flex-end;
+            background-color: $color-white-0;
+            border: 1px solid transparent;
+            height: 48px;
+            width: 47px;
+            border-radius: 50%;
+            opacity: 1;
+            top: 50%;
+            right: -20px;
+            padding-right: 11px;
+            box-shadow: 1px 1px 1px 1px #f5f5f5;
+            @media screen and (max-width: 576px) {
+                top: 48%;
+            }
+            @media screen and (max-width: 518px) {
+                top: 42%;
+            }
+            .carousel-control-next-icon {
+                background-image: url(../img/arrow-right-gray.svg);
+                background-repeat: no-repeat;
+                width: 16px;
+                height: 22px;
+                opacity: 1;
+            }
+        }
+    }
+}

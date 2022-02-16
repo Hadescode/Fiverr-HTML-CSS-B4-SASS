@@ -1,0 +1,53 @@
+@mixin styleText($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+@mixin styleButton($border-color,$bg-color,$pd-y,$pd-x,$radius) {
+    border: 1px solid $border-color;
+    background-color: $bg-color;
+    padding: $pd-y $pd-x ;
+    border-radius: $radius;
+}
+// @mixin styleButton($border-color, $bg-color, $color, $pd-y, $pd-x, $radius) {
+//     border: 1px solid $border-color;
+//     background-color: $bg-color;
+//     color: $color;
+//     padding: $pd-y $pd-x;
+//     border-radius: $radius;
+// }
+@mixin styleButtonHover($bd-color, $bg-color, $color) {
+    border-color: $bd-color;
+    background-color: $bg-color;
+    color: $color;
+}
+// Request: $screen: small
+// Return: 576px
+@mixin responsive($screen) {
+    @if(map-has-key($map:$breakpoints, $key:$screen)){
+        //  if screen name correct, return value
+        //  of screen size base on screen name
+        $value: map-get($map:$breakpoints, $key:$screen);
+        @media screen and (max-width:$value){
+            @content;
+        }
+    }
+    @else{
+        @warn 'Screen dont exist';
+    }
+}
+
+@mixin responsiveMin($screen) {
+    @if(map-has-key($map:$breakpoints, $key:$screen)){
+        //  if screen name correct, return value
+        //  of screen size base on screen name
+        @debug $screen;
+        $value: map-get($map:$breakpoints, $key:$screen);
+        @media screen and (min-width:$value){
+            @content;
+        }
+    }
+    @else{
+        @warn 'Screen dont exist';
+    }
+}

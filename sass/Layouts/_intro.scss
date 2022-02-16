@@ -1,0 +1,53 @@
+.intro{
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    .intro__left{
+        padding-right: 60px;
+        padding-left: 0;
+        h2{
+            @include styleText($color-black-1,$fs-h2,$fw-bold-1);
+            line-height: 38px;
+            padding-bottom: 24px;
+        }
+        h4{
+            @include styleText($color-black-1,$fs-3 + 2px ,$fw-bold-1);
+            margin: 0;
+            padding-bottom: 4px;
+            i{
+                box-sizing: content-box;
+                width: 16px;
+                height: 16px;
+                color: $color-green-1;
+                padding-right: 10px;
+            }
+        }
+        p{
+            @include styleText($color-gray-6,$fs-3,$fw-normal);
+            margin: 0;
+            padding-bottom: 24px;
+        }
+    }
+    .intro__right{
+        background-image: url(../../img/1400-selling-proposition-2x.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 468px;
+        position: relative;
+        i{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 80px;
+            height: 80px;
+            transform: translate(-50%,-50%);
+            color: white;
+            text-align: center;
+            padding-top: 25px;
+            border: 1px solid transparent;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+        }
+    }
+}

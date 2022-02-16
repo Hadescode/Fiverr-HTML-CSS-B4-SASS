@@ -1,0 +1,113 @@
+header {
+    width: 100%;
+    background: #fff;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: initial;
+    border-bottom: 1px solid #e5e5e5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    .header__content {
+        @include styleText($color-black, $fs-0, $fw-bold-0);
+        max-width: 1440px;
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+    
+        .header__left {
+            display: flex;
+            align-items: center;
+            padding: 0;
+            .header__logo {
+                flex-grow: 0;
+                padding: 15px 15px 15px 0;
+                img {
+                    vertical-align: baseline;
+                }
+            }
+            .header__search {
+                position: relative;
+                flex-grow: 1;
+        
+                input {
+                    border-radius: 3px 0 0 3px;
+                    padding: 8px 0 8px 28px;
+                }
+                button {
+                    @include styleButton($color-trans, $color-green-1, 8px, 16px, 0);
+                    border-radius: 0 3px 3px 0;
+                    color: $color-white-0;
+                    font-weight: $fw-bold-0;
+                    font-size: $fs-2;
+                    line-height: normal;
+                }
+            }
+            .header__search::after {
+                font-size: $fs-0;
+                font-family: "Font Awesome 5 Free";
+                content: "\f002";
+                color: $color-gray-1;
+                position: absolute;
+                z-index: 3;
+                top: 8px;
+                left: 8px;
+            }
+        }
+        .header__right {
+            justify-content: flex-end;
+            .nav-item {
+                .nav-link {
+                    color: $color-gray-6;
+                    height: 30px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    letter-spacing: 0.5px;
+                    img{
+                        vertical-align:top;
+                    }
+                }
+                .fiverrPro {
+                    color: $color-blue;
+                }
+                button {
+                    margin-left: 10px;
+                    padding: 7px 20px;
+                    font-weight: $fw-bold-0;
+                    font-size: $fs-2;
+                }
+            }
+        }
+    }
+    .header__categories{
+            border-top: 1px #e5e5e5 solid;
+
+            div{
+                max-width: 1440px;
+                width: 90%;
+                margin: 0 auto;
+                a{
+                    color: $color-gray-7;
+                    padding: 8px 0;
+                    text-align: center;
+                    font-size: $fs-0;
+                    font-weight: $fw-normal;
+                    line-height: 24px;
+                }
+            }
+            
+        }
+}
+
+@include responsive('extra-large'){
+    .header__categories{
+        opacity: 0;
+        height: 0;
+    }
+}
+
+

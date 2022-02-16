@@ -1,0 +1,47 @@
+// 7 in 1
+// Base: _reset
+//       _customize
+// Helper: _variables
+//         _mixin
+//         _extend
+// Pages: *different pages
+// Component: _button
+//            _form
+//            _carousel
+// Layout: _header
+//         _footer
+//         _section
+// Vendor: external library code
+// Theme: _light,dark,...
+// HELPER
+@import './Helper/variables';
+@import './Helper/mixin';
+
+// VENDOR
+// Chỉ import file scss, css import ở html
+
+// BASE
+@import './Base/reset';
+@import './Base/customize';
+
+// COMPONENTS
+@import './Components/button';
+
+// LAYOUTS
+@import './Layouts/header';
+@import './Layouts/carousel';
+@import './Layouts/services';
+@import './Layouts/intro';
+@import './Layouts/market';
+@import './Layouts/projects';
+@import'./Layouts/_comment';
+@import './Layouts/banner';
+@import'./Layouts/guides';
+@import'./Layouts/signup';
+@import'./Layouts/about';
+@import'./Layouts/tools';
+@import'./Layouts/footer';
+
+// PAGE
+
+// THEME (NẰM CUỐI CÙNG)
