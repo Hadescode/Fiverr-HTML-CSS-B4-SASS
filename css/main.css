@@ -371,13 +371,14 @@ header .header__categories div a {
 
 .services h2 {
   color: #000;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 700;
+  margin: 10px 0;
 }
 
 .services .services__content .services__item {
-  width: 239px;
-  height: 300px;
+  width: 230px;
+  height: 330px;
   display: inline-block;
   border: 1px solid transparent;
   border-radius: 5px;
@@ -397,53 +398,74 @@ header .header__categories div a {
 }
 
 .services .services__content .item1 {
-  background-image: url(../../img/wordpress2x.jpg);
+  background-image: url(../../img/logo-design-2x.jpg);
   background-repeat: no-repeat;
+  text-decoration: none;
+  background-position: top;
 }
 
 .services .services__content .item2 {
-  background-image: url(../../img/wordpress2x.jpg);
+  background-image: url(../../img/wordpress-2x.jpg);
   background-repeat: no-repeat;
+  text-decoration: none;
+  background-position: top;
 }
 
 .services .services__content .item3 {
-  background-image: url(../../img/voiceover2x.jpg);
+  background-image: url(../../img/voiceover-2x.jpg);
   background-repeat: no-repeat;
+  text-decoration: none;
+  background-position: top;
 }
 
 .services .services__content .item4 {
-  background-image: url(../../img/whiteboard2x.jpg);
+  background-image: url(../../img/animated-explainer-2x.jpg);
   background-repeat: no-repeat;
+  text-decoration: none;
+  background-position: top;
 }
 
 .services .services__content .item5 {
-  background-image: url(../../img/social2x.jpg);
+  background-image: url(../../img/social-2x.jpg);
   background-repeat: no-repeat;
+  text-decoration: none;
+  background-position: top;
 }
 
 .services .services__content .item6 {
-  background-image: url(../../img/seo2x.jpg);
+  background-image: url(../../img/seo-2x.jpg);
   background-repeat: no-repeat;
+  text-decoration: none;
+  background-position: top;
 }
 
 .services .services__content .item7 {
-  background-image: url(../../img/illustration2x.jpg);
+  background-image: url(../../img/illustration-2x.jpg);
   background-repeat: no-repeat;
+  text-decoration: none;
+  background-position: top;
 }
 
 .services .services__content .item8 {
-  background-image: url(../../img/translation2x.jpg);
+  background-image: url(../../img/translation-2x.jpg);
   background-repeat: no-repeat;
+  text-decoration: none;
+  background-position: top;
 }
 
 .services .services__content .item9 {
-  background-image: url(../../img/data-entry2x.jpg);
+  background-image: url(../../img/data-entry-2x.jpg);
   background-repeat: no-repeat;
+  text-decoration: none;
+  background-position: top;
 }
 
 .services .services__content .item10 {
-  background-image: url(../../img/books2x.jpg);
+  background-image: url(../../img/book-covers-2x.jpg);
+  background-position: top;
   background-repeat: no-repeat;
+  text-decoration: none;
+  background-position: top;
 }
 
 .services .services__content .owl-nav button.owl-prev {
@@ -467,7 +489,7 @@ header .header__categories div a {
   width: 48px;
   height: 48px;
   top: 45%;
-  right: 5px;
+  right: 15px;
   border-radius: 50%;
   background-color: white;
   box-shadow: 0 0 5px #CCC;
@@ -488,26 +510,31 @@ header .header__categories div a {
 }
 
 .intro {
+  background-color: #f1fdf7;
+  padding: 70px 0 0 0;
+}
+
+.intro .intro_Container {
   max-width: 1440px;
   width: 90%;
   margin: 0 auto;
   margin-bottom: 120px;
 }
 
-.intro .intro__left {
+.intro .intro_Container .intro__left {
   padding-right: 60px;
   padding-left: 0;
 }
 
-.intro .intro__left h2 {
+.intro .intro_Container .intro__left h2 {
   color: #404145;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 700;
   line-height: 38px;
   padding-bottom: 24px;
 }
 
-.intro .intro__left h4 {
+.intro .intro_Container .intro__left h4 {
   color: #404145;
   font-size: 18px;
   font-weight: 700;
@@ -515,15 +542,15 @@ header .header__categories div a {
   padding-bottom: 4px;
 }
 
-.intro .intro__left h4 i {
+.intro .intro_Container .intro__left h4 i {
   box-sizing: content-box;
   width: 16px;
   height: 16px;
-  color: #1dbf73;
+  color: #7a7d85;
   padding-right: 10px;
 }
 
-.intro .intro__left p {
+.intro .intro_Container .intro__left p {
   color: #62646a;
   font-size: 16px;
   font-weight: normal;
@@ -531,15 +558,15 @@ header .header__categories div a {
   padding-bottom: 24px;
 }
 
-.intro .intro__right {
-  background-image: url(../../img/1400-selling-proposition-2x.png);
+.intro .intro_Container .intro__right {
+  background-image: url(../../img/selling-proposition-still-1400-x1.png);
   background-repeat: no-repeat;
   background-position: center;
-  height: 468px;
+  height: 460px;
   position: relative;
 }
 
-.intro .intro__right i {
+.intro .intro_Container .intro__right i {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -848,7 +875,7 @@ header .header__categories div a {
 
 @media screen and (max-width: 518px) {
   .comment .carousel .carousel-control-prev {
-    top: 42%;
+    top: 43%;
   }
 }
 
@@ -866,7 +893,7 @@ header .header__categories div a {
   background-color: #fff;
   border: 1px solid transparent;
   height: 48px;
-  width: 47px;
+  width: 48px;
   border-radius: 50%;
   opacity: 1;
   top: 50%;
@@ -883,7 +910,7 @@ header .header__categories div a {
 
 @media screen and (max-width: 518px) {
   .comment .carousel .carousel-control-next {
-    top: 42%;
+    top: 43%;
   }
 }
 

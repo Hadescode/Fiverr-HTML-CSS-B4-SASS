@@ -1,13 +1,16 @@
 .intro{
-    max-width: 1440px;
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 120px;
+    background-color:#f1fdf7 ;
+    padding: 70px 0 0 0;
+    .intro_Container{
+        max-width: 1440px;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 120px;
     .intro__left{
         padding-right: 60px;
         padding-left: 0;
         h2{
-            @include styleText($color-black-1,$fs-h2,$fw-bold-1);
+            @include styleText($color-black-1,$fs-h1,$fw-bold-1);
             line-height: 38px;
             padding-bottom: 24px;
         }
@@ -19,7 +22,7 @@
                 box-sizing: content-box;
                 width: 16px;
                 height: 16px;
-                color: $color-green-1;
+                color: $color-gray-7;
                 padding-right: 10px;
             }
         }
@@ -30,10 +33,10 @@
         }
     }
     .intro__right{
-        background-image: url(../../img/1400-selling-proposition-2x.png);
+        background-image: url(../../img/selling-proposition-still-1400-x1.png);
         background-repeat: no-repeat;
         background-position: center;
-        height: 468px;
+        height: 460px;
         position: relative;
         i{
             position: absolute;
@@ -50,4 +53,5 @@
             border-radius: 50%;
         }
     }
+}
 }
