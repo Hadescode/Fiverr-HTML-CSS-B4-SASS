@@ -1,13 +1,15 @@
 .tools{
     margin-bottom: 64px;
-    margin-top: 8%;
+    margin-top: 2%;
     background-color: #0d084d;
+    padding: 4% 0;
     .tools__content{
         max-width: 1440px;
         width: 90%;
         margin: 0 auto;
         .tools_content_right{ 
-            padding-bottom: 100px;
+            padding-bottom: 20px;
+            max-width: 500px;
             .tools-business-logo{
                 display: flex;
                 justify-content: flex-start;
@@ -23,39 +25,53 @@
                 }
                 &::after{
                     content: "NEW";
-                    color:white;
+                    color: white;
+                    border: 1px #0d084d solid;
+                    background-color: #584aff;
+                    border-radius: 15px;
+                    font-size: 10px;
+                    padding: 0px 8px;
+                    font-weight: 600;
+                    margin-left: 8px; 
                 }
-               
             }
-            h2{
-                @include styleText($color-black-0,$fs-h2,$fw-bold);
+            .tools-font{
                 padding-bottom: 20px;
                 padding-top: 40px;
+                max-width: 420px;
+              span{
+                @include styleText($color-white-0,$fs-h1 - 2,$fw-bold);
                 line-height: 38px;
+                i{
+                    font-family:"Helvetica Neue" ;
+                }
+              }
+            }
+            .tools-text{
+                @include styleText($color-white-0,$fs-3 + 2,$fw-normal);
+                padding-bottom: 3%;
             }
             .tools__items{
                 padding-bottom: 16px;
-            }
-            .tools__items h4::before{
-                content: '';
-                background-image: url(../img/checkmark.svg);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: 16px;
-                padding-right: 20px;
-                margin-right: 10px;
-            }
-            h4{
-                @include styleText($color-black-0,$fs-3,$fw-bold-0);
-            }
-            p{
-                @include styleText($color-gray-7,$fs-3,$fw-normal);
-                padding-right: 19%;
-                @media screen and (min-width:1200px) and (max-width:1440px){
-                    padding-right: 8%;
+                i{
+                    @include styleText($color-gray-6,$fs-4 + 2,null);
                 }
-                
+                span{
+                    @include styleText($color-white-0,$fs-3,$fw-normal);
+                    padding-left: 6px;
+                    
+                }
             }
+            .btn-tools{
+                cursor: pointer;
+                margin-top: 30px;
+                transition: all 0.5s ease;
+                a{
+                    text-decoration: none;
+                    @include styleText($color-white-0,$fs-3,$fw-bold-0);
+                }
+            }
+           
         }
         .tools_content_left{
             background-image: url(../img/business-desktop-870-x1.png);
@@ -63,7 +79,7 @@
             background-position: center;
             background-size: cover;
             width: 100%;
-            height: 98%;
+            height: 90%;
             @media screen and (min-width:1200px) and (max-width:1440px){
                 width: 100%;
                 height: 83%;

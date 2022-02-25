@@ -6,8 +6,9 @@
         width: 90%;
         margin: 0 auto;
         margin-bottom: 120px;
+        padding-bottom: 120px;
     .intro__left{
-        padding-right: 60px;
+        padding-right: 118px;
         padding-left: 0;
         h2{
             @include styleText($color-black-1,$fs-h1,$fw-bold-1);
@@ -22,12 +23,12 @@
                 box-sizing: content-box;
                 width: 16px;
                 height: 16px;
-                color: $color-gray-7;
+                color: $color-gray-6;
                 padding-right: 10px;
             }
         }
         p{
-            @include styleText($color-gray-6,$fs-3,$fw-normal);
+            @include styleText($color-gray-6,$fs-3 + 2,$fw-normal);
             margin: 0;
             padding-bottom: 24px;
         }

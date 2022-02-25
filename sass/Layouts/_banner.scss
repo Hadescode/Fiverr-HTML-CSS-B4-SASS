@@ -1,5 +1,5 @@
-.banner{
-    background-image: url(../img/pro_banner_1400px-2x.jpg);
+.banner {
+    background-image: url(../../img/logo-maker-banner-wide-desktop-1352-2x.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -8,67 +8,80 @@
     width: 90%;
     margin: 64px auto;
     margin-bottom: 64px; // khoảng cách với section TOOLS
-    .banner__content{
-        padding-top: 60px;
+    background-color: $color-blue-1;
+    .banner__content {
+        padding-top: 35px;
         padding-right: 40%; // responsive ko cần chỉnh pd chỉnh fs,fsw
-        @media (min-width: 1200px) and (max-width: 1440px) { 
-            padding-top: 60px;
-            padding-right: 42%; 
+        align-items: center;
+        @media (min-width: 1200px) and (max-width: 1440px) {
+            padding-top: 35px;
+            padding-right: 42%;
             padding-left: 5%;
-        } 
         }
-        .banner__item{
-            padding-bottom:$pd-2;
-            .banner_text::after{
-                content: '';
-                background-image:url(../img/pro-logo.2b919ef.svg);// thêm hình
-                background-size: 84px auto;
-                background-repeat: no-repeat;
-                background-position: center;
-                width: 50%;
-                padding-left: 100px;
-                // margin-left: 2px;
-            }
+    }
+    .banner__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .banner-img-logo {
+            filter: brightness(0) invert(1);
+            height: 22px;
         }
-        p{
-            @include styleText($color-white-0,$fs-h2 + 6,$fw-normal);
-            padding-bottom: 10px;
-            line-height: 40px;
+        small {
+            @include styleText($color-white-0, $fs-h2 + 4, $fw-normal);
+            padding-top: 3px;
+            padding-left: 5px;
         }
-        // ReSpOnSiVe
-        @include responsive('extra-large'){
-            .banner__content{
-                padding-top: 60px;
-                padding-right: 40%;
-                padding-left: 5%;
-            }
+        &::after{
+            content: "maker.";
+            font-size: 28px;
+            padding-top: 3px;
+            padding-left: 2px;
+            color: white;
         }
-        @include responsive('large'){//992px
-            .banner__content{
-                padding-top: 60px;
-                padding-right: 24%
-            }
+    }
+    h2{
+        @include styleText($color-white-0,$fs-h1,$fw-bold-0);
+        padding: 26px 0 0;
+        i{
+            font-family:"Helvetica Neue";
+            font-size: $fs-h1 +3;
         }
-        @include responsive('medium'){
-            .banner__content{
-                padding-top: 60px;
-                padding-right: 18%;
-            }
+    }
+    .banner-description{
+        @include styleText($color-white-0,$fs-3,$fw-normal);
+        padding-bottom: 26px;
+    }
+    
+    // ReSpOnSiVe
+    @include responsive("extra-large") {
+        .banner__content {
+            padding-top: 60px;
+            padding-right: 40%;
+            padding-left: 5%;
         }
-        @include responsive('small'){
-            .banner__content{
-                padding-top: 60px;
-                padding-right: 12%;
-                p{
-                    @include styleText($color-white-0,$fs-h2,$fw-normal);
-                    padding-bottom: 10px;
-                }
+    }
+    @include responsive("large") {
+        //992px
+        .banner__content {
+            padding-top: 60px;
+            padding-right: 24%;
+        }
+    }
+    @include responsive("medium") {
+        .banner__content {
+            padding-top: 60px;
+            padding-right: 18%;
+        }
+    }
+    @include responsive("small") {
+        .banner__content {
+            padding-top: 60px;
+            padding-right: 12%;
+            p {
+                @include styleText($color-white-0, $fs-h2, $fw-normal);
+                padding-bottom: 10px;
             }
         }
     }
- 
-
-
-
-
-
+}

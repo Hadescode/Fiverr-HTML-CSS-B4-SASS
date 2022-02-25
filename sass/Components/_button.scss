@@ -1,11 +1,12 @@
 //7/9/2020
 .btn_banner{
-    @include styleButton($color-green-3,$color-gray-0,$pd-1,$pd-2 +10,$border-radius + 3);
-    @include styleText($color-green-3, $fs-0 - 2,$fw-bold);
+    @include styleButton($color-white-0,$color-white-0,$pd-1,$pd-2 +4,$border-radius + 3);
+    @include styleText($color-blue-1, $fs-3  ,$fw-bold);
+    // font-family:"Helvetica Neue";
     &:hover{
         
-        @include styleButton($color-green-3,$color-green-3,$pd-1,$pd-2 +10,$border-radius + 3);
-        @include styleText($color-white-0, $fs-0 - 2,$fw-bold);
+        @include styleButton($color-white-1,$color-white-1,$pd-1,$pd-2 +4,$border-radius + 3);
+        @include styleText($color-blue-1, $fs-3 ,$fw-bold);
         transition: all 0.5s;
     }
     &:focus{
@@ -35,5 +36,12 @@
     }
     &:focus{
         outline: none;
+    }
+}
+
+.btn-tools{
+    @include styleButton($color-green-1,$color-green-1,$pd-1,$pd-2,$border-radius + 2);
+    &:hover{
+        @include styleButton($color-green-2,$color-green-2,$pd-1,$pd-2,$border-radius + 2);
     }
 }

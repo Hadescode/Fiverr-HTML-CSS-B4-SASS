@@ -30,13 +30,14 @@ header {
                     vertical-align: baseline;
                 }
             }
-            .header__search {
+            .header__search{
                 position: relative;
                 flex-grow: 1;
-        
-                input {
+                .form-control{
                     border-radius: 3px 0 0 3px;
                     padding: 8px 0 8px 28px;
+                }&:focus{
+                    outline: none;
                 }
                 button {
                     @include styleButton($color-trans, $color-green-1, 8px, 16px, 0);
