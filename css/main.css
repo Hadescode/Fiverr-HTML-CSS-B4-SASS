@@ -416,70 +416,70 @@ header .header__categories div a {
 }
 
 .services .services__content .item1 {
-  background-image: url(../../img/logo-design-2x.jpg);
+  background-image: url(../img/logo-design-2x.jpg);
   background-repeat: no-repeat;
   text-decoration: none;
   background-position: top;
 }
 
 .services .services__content .item2 {
-  background-image: url(../../img/wordpress-2x.jpg);
+  background-image: url(../img/wordpress-2x.jpg);
   background-repeat: no-repeat;
   text-decoration: none;
   background-position: top;
 }
 
 .services .services__content .item3 {
-  background-image: url(../../img/voiceover-2x.jpg);
+  background-image: url(../img/voiceover-2x.jpg);
   background-repeat: no-repeat;
   text-decoration: none;
   background-position: top;
 }
 
 .services .services__content .item4 {
-  background-image: url(../../img/animated-explainer-2x.jpg);
+  background-image: url(../img/animated-explainer-2x.jpg);
   background-repeat: no-repeat;
   text-decoration: none;
   background-position: top;
 }
 
 .services .services__content .item5 {
-  background-image: url(../../img/social-2x.jpg);
+  background-image: url(../img/social-2x.jpg);
   background-repeat: no-repeat;
   text-decoration: none;
   background-position: top;
 }
 
 .services .services__content .item6 {
-  background-image: url(../../img/seo-2x.jpg);
+  background-image: url(../img/seo-2x.jpg);
   background-repeat: no-repeat;
   text-decoration: none;
   background-position: top;
 }
 
 .services .services__content .item7 {
-  background-image: url(../../img/illustration-2x.jpg);
+  background-image: url(../img/illustration-2x.jpg);
   background-repeat: no-repeat;
   text-decoration: none;
   background-position: top;
 }
 
 .services .services__content .item8 {
-  background-image: url(../../img/translation-2x.jpg);
+  background-image: url(../img/translation-2x.jpg);
   background-repeat: no-repeat;
   text-decoration: none;
   background-position: top;
 }
 
 .services .services__content .item9 {
-  background-image: url(../../img/data-entry-2x.jpg);
+  background-image: url(../img/data-entry-2x.jpg);
   background-repeat: no-repeat;
   text-decoration: none;
   background-position: top;
 }
 
 .services .services__content .item10 {
-  background-image: url(../../img/book-covers-2x.jpg);
+  background-image: url(../img/book-covers-2x.jpg);
   background-position: top;
   background-repeat: no-repeat;
   text-decoration: none;
@@ -578,7 +578,7 @@ header .header__categories div a {
 }
 
 .intro .intro_Container .intro__right {
-  background-image: url(../../img/selling-proposition-still-1400-x1.png);
+  background-image: url(../img/selling-proposition-still-1400-x1.png);
   background-repeat: no-repeat;
   background-position: center;
   height: 460px;
