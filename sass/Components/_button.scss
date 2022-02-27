@@ -15,11 +15,11 @@
 }
 
 .btn_signup{
-    @include styleButton($color-green-1,$color-green-1,$pd-1,$pd-2 + 10,$border-radius + 2);
-    @include styleText($color-white-0,$fs-2,$fw-bold);
+    @include styleButton($color-green-1,$color-green-1,$pd-1,$pd-2 + 5,$border-radius + 2);
+    @include styleText($color-white-0,$fs-3,$fw-bold);
     &:hover{
-        @include styleButton($color-green-2,$color-green-2,$pd-1,$pd-2 + 10,$border-radius + 2);
-        @include styleText($color-white-0,$fs-2,$fw-bold);
+        @include styleButton($color-green-2,$color-green-2,$pd-1,$pd-2 + 5,$border-radius + 2);
+        @include styleText($color-white-0,$fs-3,$fw-bold);
         transition: all 1s;
     }
     &:focus{

@@ -41,20 +41,20 @@ html, body {
 .btn_signup {
   border: 1px solid #1dbf73;
   background-color: #1dbf73;
-  padding: 10px 30px;
+  padding: 10px 25px;
   border-radius: 5px;
   color: #fff;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold;
 }
 
 .btn_signup:hover {
   border: 1px solid #19a463;
   background-color: #19a463;
-  padding: 10px 30px;
+  padding: 10px 25px;
   border-radius: 5px;
   color: #fff;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold;
   transition: all 1s;
 }
@@ -662,7 +662,7 @@ header .header__categories div a {
 
 .projects h2 {
   color: #000;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 700;
   line-height: 38px;
   padding-bottom: 24px;
@@ -675,12 +675,47 @@ header .header__categories div a {
 .projects .projects__content .projects__card .card-img-top {
   width: 100%;
   height: 237px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.projects .projects__content .projects__card:hover {
+  transition: all 0.3s ease-in-out;
+  opacity: .85;
+}
+
+.projects .projects__content .projects__card .card-body {
+  display: flex;
+  padding: 16px 0 12px 16px;
 }
 
 .projects .projects__content .projects__card .card-body img {
   width: 36px;
   height: 36px;
   border-radius: 50%;
+}
+
+.projects .projects__content .projects__card .card-body .card-info {
+  font-size: 14px;
+  line-height: 21px;
+  padding: 0px 0px 0px 10px;
+}
+
+.projects .projects__content .projects__card .card-body .card-info .card-title {
+  display: block;
+  margin: 0 auto;
+}
+
+.projects .projects__content .projects__card .card-body .card-info .card-title a {
+  color: #404145;
+}
+
+.projects .projects__content .projects__card .card-body .card-info .card-text {
+  color: #95979d !important;
+}
+
+.projects .projects__content .projects__card .card-body:hover a {
+  text-decoration: none;
 }
 
 .projects .projects__content .owl-nav button.owl-prev {
@@ -692,7 +727,7 @@ header .header__categories div a {
   border-radius: 50%;
   background-color: white;
   transform: rotate(-180deg);
-  box-shadow: 0 0 5px #CCC;
+  box-shadow: 0 0 5px #ccc;
 }
 
 .projects .projects__content .owl-nav button.owl-prev:focus {
@@ -707,14 +742,15 @@ header .header__categories div a {
   right: -22px;
   border-radius: 50%;
   background-color: white;
-  box-shadow: 0 0 5px #CCC;
+  box-shadow: 0 0 5px #ccc;
 }
 
 .projects .projects__content .owl-nav button.owl-next:focus {
   outline: none;
 }
 
-.projects .projects__content .owl-prev i, .projects .projects__content .owl-next i {
+.projects .projects__content .owl-prev i,
+.projects .projects__content .owl-next i {
   display: inline-block;
   background: url(../../img/arrow-right-black.svg) no-repeat;
   background-size: cover;
@@ -986,7 +1022,6 @@ header .header__categories div a {
   max-width: 1440px;
   width: 90%;
   margin: 64px auto;
-  margin-bottom: 160px;
   margin-top: 6%;
 }
 
@@ -1026,7 +1061,7 @@ header .header__categories div a {
 }
 
 .guides .guides__container .guides__content .guides__items h4 {
-  color: #222325;
+  color: #404145;
   font-size: 18px;
   font-weight: 600;
 }
@@ -1035,6 +1070,7 @@ header .header__categories div a {
   color: #7a7d85;
   font-size: 16px;
   font-weight: normal;
+  padding-bottom: 15px;
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1440px) {
@@ -1116,36 +1152,46 @@ header .header__categories div a {
 }
 
 .signup .signup__container {
-  background-image: url(../img/1440-cta2x.jpg);
+  background-image: url(../img/bg-signup-1400-x1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 244px;
+  height: 480px;
+  object-fit: cover;
 }
 
 .signup .signup__container .signup_content {
-  text-align: center;
+  top: 68%;
+  left: 30%;
+  transform: translate(-50%, -50%);
   padding-top: 4%;
 }
 
-.signup .signup__container .signup_content h2 {
-  color: #222325;
-  font-size: 24px;
+.signup .signup__container .signup_content .signup-content-text h2 {
+  color: #fff;
+  font-size: 48px;
   font-weight: 600;
-  padding-bottom: 10px;
 }
 
-.signup .signup__container .signup_content p {
-  color: #7a7d85;
-  font-size: 16px;
-  font-weight: normal;
-  padding-bottom: 16px;
+.signup .signup__container .signup_content .signup-content-text h2 i {
+  font-family: "Helvetica Neue";
+}
+
+.signup .signup__container .signup_content .signup-content-text h3 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 600;
+  padding-bottom: 26px;
+}
+
+.signup .signup__container .signup_content .signup-content-text h3 i {
+  font-family: "Helvetica Neue";
 }
 
 @media screen and (max-width: 992px) {
   .signup .signup__container {
-    background-image: url(../img/1440-cta2x.jpg);
+    background-image: url(../img/bg-signup-1400-x1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1157,22 +1203,22 @@ header .header__categories div a {
     padding-top: 7%;
   }
   .signup .signup__container .signup_content h2 {
-    color: #222325;
+    color: #fff;
     font-size: 22px;
     font-weight: 600;
     padding-bottom: 10px;
   }
-  .signup .signup__container .signup_content p {
-    color: #222325;
+  .signup .signup__container .signup_content h3 {
+    color: #fff;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 600;
     padding-bottom: 16px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .signup .signup__container {
-    background-image: url(../img/1440-cta2x.jpg);
+    background-image: url(../img/bg-signup-1400-x1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1199,7 +1245,7 @@ header .header__categories div a {
 
 @media screen and (max-width: 576px) {
   .signup .signup__container {
-    background-image: url(../img/1440-cta2x.jpg);
+    background-image: url(../img/bg-signup-1400-x1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
