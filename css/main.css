@@ -519,7 +519,7 @@ header .header__categories div a {
 
 .services .services__content .owl-prev i, .services .services__content .owl-next i {
   display: inline-block;
-  background: url(../../img/arrow-right-black.svg) no-repeat;
+  background: url(../img/arrow-right-black.svg) no-repeat;
   background-size: cover;
   background-position: center;
   width: 16px;
@@ -752,7 +752,7 @@ header .header__categories div a {
 .projects .projects__content .owl-prev i,
 .projects .projects__content .owl-next i {
   display: inline-block;
-  background: url(../../img/arrow-right-black.svg) no-repeat;
+  background: url(../img/arrow-right-black.svg) no-repeat;
   background-size: cover;
   background-position: center;
   width: 16px;
@@ -1560,7 +1560,7 @@ footer .footer__container .footer__items__right {
 footer .footer__container .footer__items__right .footer__text {
   display: inline;
   color: #b5b6ba;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: normal;
   margin-left: 20px;
 }

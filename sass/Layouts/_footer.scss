@@ -8,7 +8,7 @@ footer {
       margin-top: 25px;
       .footer__text {
         display: inline;
-        @include styleText($color-gray-8, $fs-1, $fw-normal);
+        @include styleText($color-gray-8, $fs-1 +2 , $fw-normal);
         margin-left: $mg-2 - 5;
       }
     }
