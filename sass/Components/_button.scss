@@ -45,3 +45,39 @@
         @include styleButton($color-green-2,$color-green-2,$pd-1,$pd-2,$border-radius + 2);
     }
 }
+
+.btn-carousel-search{
+    @include styleButton($color-trans, $color-green-1, 12px, 24px, 0);
+    color: $color-white-0;
+    border-radius: 0 3px 3px 0;
+    font-weight: $fw-bold-0;
+    font-size: $fs-0;
+    line-height: normal;
+    &:hover{
+        @include styleButton($color-trans, $color-green-2, 12px, 24px, 0);
+        color: $color-white-0;
+        border-radius: 0 3px 3px 0;
+        font-weight: $fw-bold-0;
+        font-size: $fs-0;
+        line-height: normal;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+// .btn-carousel-search-sub{
+//     @include styleButton($color-trans, $color-green-1, 12px, 155px, 0);
+//     color: $color-white-0;
+//     border-radius: 0 3px 3px 0;
+//     font-weight: $fw-bold-0;
+//     font-size: $fs-0;
+//     line-height: normal;
+//     &:hover{
+//         @include styleButton($color-trans, $color-green-2, 12px, 155px, 0);
+//         color: $color-white-0;
+//         border-radius: 0 3px 3px 0;
+//         font-weight: $fw-bold-0;
+//         font-size: $fs-0;
+//         line-height: normal;
+//     }
+// }

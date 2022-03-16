@@ -1,0 +1,33 @@
+//Menu-Header
+@include responsive('extra-large'){
+    .header__categories{
+        opacity: 0;
+        height: 0;
+    }
+}
+@include responsive('small'){
+    header {
+        .header__content{
+            justify-content: center !important;
+            .header__left {
+                .header__logo {
+                    flex-grow: 0;
+                    padding: 15px 15px 15px 15px !important; 
+                    img {
+                        vertical-align: baseline;
+                    }
+                    position: fixed;
+                }
+                .header__search{
+                    display: none !important;
+                }
+            }
+            .header__right{
+                display: none;
+            }
+            .header__categories{
+                display: none;
+            }
+        }
+    }    
+}

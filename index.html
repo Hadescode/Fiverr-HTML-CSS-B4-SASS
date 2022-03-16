@@ -43,7 +43,7 @@
 
     <!-- HEADER -->
     <header>
-      <nav class="navbar navbar-expand-lg header__content">
+      <nav class="navbar navbar-expand-sm navbar-expand-lg header__content">
         <div class="header__left col-4">
           <a class="header__logo" href="#">
             <img src="./img/fiverr.svg" alt="" />
@@ -61,7 +61,7 @@
             </div>
           </form>
         </div>
-        <ul class="header__right col-8 navbar-nav mr-auto">
+        <ul class="navbar navbar-expand-sm header__right col-8 mr-auto">
           <li class="nav-item">
             <a class="nav-link fiverrPro" href="#"> Fiverr BusIness </a>
           </li>
@@ -107,7 +107,7 @@
       <div class="carousel__triangle"></div>
       <div class="carousel__content">
         <div class="carousel__header">
-          <h1>Find the perfect freelance services for your business</h1>
+          <h1>Find the perfect <i>freelance</i> services for your business</h1>
           <form class="carousel__form input-group">
             <input
               type="text"
@@ -116,15 +116,15 @@
               aria-label="Recipient's username"
               aria-describedby="basic-addon2"
             />
-            <button type="submit">Search</button>
+            <button class="btn-carousel-search" type="submit">Search</button>
           </form>
           <div class="carousel__header--popular">
             <span>Popular: </span>
             <ul>
-              <li><a href="#">Website Building</a></li>
+              <li><a href="#">Website Design</a></li>
               <li><a href="#">Wordpress</a></li>
               <li><a href="#">Logo Design</a></li>
-              <li><a href="#">Dropshipping</a></li>
+              <li><a href="#">NFT Art</a></li>
             </ul>
           </div>
         </div>
@@ -209,8 +209,9 @@
         </div>
       </div>
       <div class="carousel__brands row">
+        <span class="carousel-text">Trusted by:</span>
         <!-- <div class="col"> -->
-        <img src="./img/facebook.a1eeefc.png" alt="" />
+        <img src="./img/facebook.31d5f92.png" alt="" />
         <!-- </div> -->
         <!-- <div class="col"> -->
         <img src="./img/google.517da09.png" alt="" />
@@ -225,7 +226,7 @@
         <img src="./img/paypal.ec56157.png" alt="" />
         <!-- </div> -->
         <!-- <div class="col"> -->
-        <img src="./img/intuit.6e468f0.png" alt="" />
+        <!-- <img src="./img/intuit.6e468f0.png" alt="" /> -->
         <!-- </div> -->
       </div>
     </section>
@@ -1052,7 +1053,7 @@
           $(window).scroll(function () {
             if (window.scrollY === 0) {
               $(".header__search").hide();
-              document.querySelector(".header__content").style.height = "";
+              document.querySelector(".header__content").style.height = "80px";
             } else {
               $(".header__search").show();
               document.querySelector(".header__content").style.height = "80px";

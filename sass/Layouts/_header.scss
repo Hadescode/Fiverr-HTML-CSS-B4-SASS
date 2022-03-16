@@ -25,7 +25,7 @@ header {
             padding: 0;
             .header__logo {
                 flex-grow: 0;
-                padding: 15px 15px 15px 0;
+                padding: 15px 15px 15px 0; 
                 img {
                     vertical-align: baseline;
                 }
@@ -36,8 +36,10 @@ header {
                 .form-control{
                     border-radius: 3px 0 0 3px;
                     padding: 8px 0 8px 28px;
-                }&:focus{
-                    outline: none;
+                    &:focus{
+                        border-color: #ced4da;
+                        box-shadow: 0 0 0 0;
+                     }
                 }
                 button {
                     @include styleButton($color-trans, $color-green-1, 8px, 16px, 0);
@@ -62,6 +64,7 @@ header {
         .header__right {
             justify-content: flex-end;
             .nav-item {
+                list-style: none;
                 .nav-link {
                     color: $color-gray-6;
                     height: 30px;
@@ -71,9 +74,15 @@ header {
                     img{
                         vertical-align:top;
                     }
+                    &:hover{
+                        color: $color-green-2;
+                    }
                 }
                 .fiverrPro {
-                    color: $color-blue;
+                    color: #1e1692;
+                    &:hover{
+                        color: $color-green-2;
+                    }
                 }
                 button {
                     margin-left: 10px;
@@ -104,11 +113,6 @@ header {
         }
 }
 
-@include responsive('extra-large'){
-    .header__categories{
-        opacity: 0;
-        height: 0;
-    }
-}
+
 
 
