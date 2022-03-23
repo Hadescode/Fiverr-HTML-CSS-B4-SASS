@@ -1,31 +1,35 @@
-.market{
+.market {
     max-width: 1440px;
     width: 90%;
     margin: 0 auto;
-    h2{
-        @include styleText($color-black,$fs-h2,$fw-bold-1);
+    h2 {
+        @include styleText($color-black, $fs-h2, $fw-bold-1);
         line-height: 38px;
         padding-bottom: 24px;
         margin-bottom: 40px;
     }
-    .market__items{
+    .market__items {
         padding: 0px 10px 32px;
         padding-bottom: 55px;
         box-sizing: border-box;
         text-align: center;
-        a{
+        a {
             color: $color-black-0;
             position: relative;
             display: inline-block;
             text-decoration: none;
 
-            img{
+            img {
                 display: block;
                 width: 48px;
+                height: 48px;
                 margin: 0 auto 15px;
             }
+            p {
+                @include styleText($color-black-1, $fs-3 - 1, $fw-normal);
+            }
         }
-        a::after{
+        a::after {
             content: "";
             position: absolute;
             top: 45px;
@@ -35,14 +39,28 @@
             width: 48px;
             border-bottom: 2px solid #c5c6c9;
             box-sizing: content-box;
-            
         }
-        a:hover::after{
+        a:hover::after {
             padding: 0px 20px 8px;
             border-color: $color-green-1;
             text-decoration: none;
             transition: border-color 0.2s ease-in-out 0s, padding 0.2s ease-in-out 0s;
         }
     }
-    
+}
+//----------Responsive Mobile----------//
+@include responsive("small") {
+    .market {
+        h2 {
+            @include styleText($color-black-1, $fs-h2 + 4, $fw-bold-1);
+            line-height: 38px;
+            padding-bottom: 24px;
+            margin-bottom: 40px;
+        }
+        .market__items {
+            p {
+                @include styleText($color-black-1, $fs-3 !important, $fw-normal);
+            }
+        }
+    }
 }

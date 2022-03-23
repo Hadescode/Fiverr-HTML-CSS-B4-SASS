@@ -167,8 +167,8 @@
 @include responsive("small") {
     .carousel {
         .carousel__triangle {
-            border-bottom: 98vw solid #2e6a3c;
-            border-left: 118vw solid transparent;
+            border-bottom: 84vw solid #2e6a3c;
+            border-left: 100vw solid transparent;
         }
         .carousel__content {
             max-width: 1440px;
@@ -237,6 +237,17 @@
                 display: none !important;
             }
             .carousel__layOver {
+                display: none;
+            }
+        }
+        .carousel__brands{
+            .carousel-text{
+                display: none;
+            }
+            img {
+                padding: 0px 10px;
+            }
+            .img-hidden{
                 display: none;
             }
         }

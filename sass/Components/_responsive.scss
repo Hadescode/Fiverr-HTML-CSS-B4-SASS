@@ -13,10 +13,11 @@
                 .header__logo {
                     flex-grow: 0;
                     padding: 15px 15px 15px 15px !important; 
+                    position: fixed;
                     img {
                         vertical-align: baseline;
                     }
-                    position: fixed;
+                    
                 }
                 .header__search{
                     display: none !important;

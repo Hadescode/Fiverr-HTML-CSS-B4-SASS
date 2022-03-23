@@ -2,122 +2,86 @@
     max-width: 1440px;
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 120px;
     h2 {
         @include styleText($color-black, $fs-h1, $fw-bold-1);
-        margin: $mg-1 0;
+        line-height: 38px;
+        padding-bottom: 24px;
     }
-    .services__content{
-        .services__item{
-            width: 230px;
-            height: 330px;
-            display: inline-block;
-            border: 1px solid transparent;
-            border-radius: 5px;
-            h4 {
-                @include styleText($color-white-0, $fs-4, $fw-bold-1);
-                line-height: 23px;
-                padding: $pd-1 + 5px;
-                margin-bottom: 0;
+
+    .services__content {
+        .services__card {
+                // box-shadow: 8px -6px 5px 1px #00000026;
+          
+            .card-img-top {
+                width: 100%;
+                height: 345px;
+                object-fit: cover;
+                cursor: pointer;
+                position: relative;
             }
-           
+            &:hover {
+                transition: all 0.3s ease-in-out;
+                opacity: 0.85;
+            }
+            .card-info {
+                position: absolute;
+                top: 0;
+                margin: 14px 10px;
+                font-size: 14px;
+                line-height: 21px;
+                padding: 0px 0px 0px 10px;
+                .card-title {
+                    display: block;
+                    margin: 0 auto;
+                    a{
+                        @include styleText($color-white-0, $fs-0, $fw-light) ;
+                        font-family: "Helvetica Neue";
+                    }
+                    
+                }
+                .card-text {
+                    // color: $color-white-0 !important;
+                    @include styleText($color-white-0, $fs-h2, $fw-bold) ;
+                    
+                }
+            }
+            &:hover {
+                a {
+                    text-decoration: none;
+                }
+            }
         }
-        &:hover h4{
-            text-decoration: none;
-        }
-        .item1{
-            background-image: url(../img/logo-design-2x.jpg);
-            background-repeat: no-repeat;
-            text-decoration: none;
-            background-position: top;
-            
-        }
-        .item2{
-            background-image: url(../img/wordpress-2x.jpg);
-            background-repeat: no-repeat;
-            text-decoration: none;
-            background-position: top;
-        }
-        .item3{
-            background-image: url(../img/voiceover-2x.jpg);
-            background-repeat: no-repeat;
-            text-decoration: none;
-            background-position: top;
-        }
-        .item4{
-            background-image: url(../img/animated-explainer-2x.jpg);
-            background-repeat: no-repeat;
-            text-decoration: none;
-            background-position: top;
-        }
-        .item5{
-            background-image: url(../img/social-2x.jpg);
-            background-repeat: no-repeat;
-            text-decoration: none;
-            background-position: top;
-        }
-        .item6{
-            background-image: url(../img/seo-2x.jpg);
-            background-repeat: no-repeat;
-            text-decoration: none;
-            background-position: top;
-        }
-        .item7{
-            background-image: url(../img/illustration-2x.jpg);
-            background-repeat: no-repeat;
-            text-decoration: none;
-            background-position: top;
-        }
-        .item8{
-            background-image: url(../img/translation-2x.jpg);
-            background-repeat: no-repeat;
-            text-decoration: none;
-            background-position: top;
-        }
-        .item9{
-            background-image: url(../img/data-entry-2x.jpg);
-            background-repeat: no-repeat;
-            text-decoration: none;
-            background-position: top;
-        }
-        .item10{
-            background-image: url(../img/book-covers-2x.jpg);
-            background-position: top;
-            background-repeat: no-repeat;
-            text-decoration: none;
-            background-position: top;
-        }
-        .owl-nav button.owl-prev{
+
+        .owl-nav button.owl-prev {
             position: absolute;
             width: 48px;
             height: 48px;
-            top: 45%;
+            top: 40%;
             left: -23px;
             border-radius: 50%;
             background-color: white;
             transform: rotate(-180deg);
-            box-shadow: 0 0 5px #CCC;
-            
-            &:focus{
+            box-shadow: 0 0 5px #ccc;
+            &:focus {
                 outline: none;
             }
         }
-        
+
         .owl-nav button.owl-next {
             position: absolute;
             width: 48px;
             height: 48px;
-            top: 45%;
-            right: 15px;
+            top: 40%;
+            right: -22px;
             border-radius: 50%;
             background-color: white;
-            box-shadow: 0 0 5px #CCC;
-
-            &:focus{
+            box-shadow: 0 0 5px #ccc;
+            &:focus {
                 outline: none;
             }
         }
-        .owl-prev i, .owl-next i {
+        .owl-prev i,
+        .owl-next i {
             display: inline-block;
             background: url(../img/arrow-right-black.svg) no-repeat;
             background-size: cover;
@@ -125,9 +89,6 @@
             width: 16px;
             height: 16px;
             margin-top: 5px;
-
-           
         }
     }
-
 }

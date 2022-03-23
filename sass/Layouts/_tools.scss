@@ -178,13 +178,16 @@
                 }
             }
             .tools_content_left{
-                background-image: url(../img/ipadX2.gif);
+                background-image: url(../img/business-desktop-870-x1.png);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
                 width: 100%;
-                height: 60%;
-                padding: 35%;
+                height: 90%;
+                @media screen and (min-width:1200px) and (max-width:1440px){
+                    width: 100%;
+                    height: 83%;
+                }
             }
         }
     }
