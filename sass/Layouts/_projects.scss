@@ -92,3 +92,13 @@
         }
     }
 }
+//------------Responsive mobile------------//
+@include responsive ("small"){
+    .projects {
+        h2 {
+            @include styleText($color-black, $fs-h1 - 2, $fw-bold-1);
+            line-height: 38px;
+            padding-bottom: 24px;
+        }
+    }
+}
