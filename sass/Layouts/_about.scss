@@ -1,7 +1,7 @@
 .about {
     margin-top: 10%;
     border-top: 1px solid #e4e5e7;
-
+  
     .about_container {
         max-width: 1440px;
         width: 90%;
@@ -17,6 +17,7 @@
                 @include styleText($color-black-1, $fs-3, $fw-bold-0);
                 padding-bottom: $pd-2;
             }
+                
             ul li {
                 list-style-type: none;
                 padding-bottom: $pd-1 + 6;
@@ -27,6 +28,46 @@
             ul li a small {
                 display: block;
                 @include styleText($color-gray-8, $fs-3 - 2, $fw-normal);
+            }
+        }
+    }
+}
+//-------- Responsive mobile-------//
+@include responsive ("small"){
+    .about {
+        margin-top: 10%;
+        border-top: 1px solid #e4e5e7;
+
+        .about_container {
+            max-width: 1440px;
+            width: 90%;
+            margin: 0 auto;
+            padding-top: 5%;
+            @media (min-width:500px){
+                .about_1{
+                    display: none;
+                }
+            }
+            .about_content {
+                h4 {
+                    @include styleText($color-black-1, $fs-3, $fw-bold-0);
+                    padding-bottom: $pd-2;
+                    display: flex;
+                    // .material-icons-outlined{
+                    //     // padding-left: 60%;
+                    // }
+                }
+                ul li {
+                    list-style-type: none;
+                    padding-bottom: $pd-1 + 6;
+                }
+                ul li a {
+                    @include styleText($color-gray-7, $fs-3 - 1, $fw-normal);
+                }
+                ul li a small {
+                    display: block;
+                    @include styleText($color-gray-8, $fs-3 - 2, $fw-normal);
+                }
             }
         }
     }

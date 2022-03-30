@@ -17,10 +17,39 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Google Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone"
+      rel="stylesheet"
+    />
+
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <!-- Bootstrap CSS -->
     <link
@@ -384,28 +413,28 @@
     <section class="market">
       <h2>Explore the marketplace</h2>
       <div class="row">
-        <div class="market__items col-6 col-xl">
+        <div class="market__items col-6 col-xl-3">
           <a href="#">
             <img src="./img/graphics-design.d32a2f8.svg" alt="" />
             <p>Graphics & Design</p>
           </a>
         </div>
 
-        <div class="market__items col-6 col-xl">
+        <div class="market__items col-6 col-xl-3">
           <a href="#">
             <img src="./img/online-marketing.74e221b.svg" alt="" />
             <p>Digital Marketing</p>
           </a>
         </div>
 
-        <div class="market__items col-6 col-xl">
+        <div class="market__items col-6 col-xl-3">
           <a href="#">
             <img src="./img/writing-translation.32ebe2e.svg" alt="" />
             <p>Writing & Translation</p>
           </a>
         </div>
 
-        <div class="market__items col-6 col-xl">
+        <div class="market__items col-6 col-xl-3">
           <a href="#">
             <img src="./img/video-animation.f0d9d71.svg" alt="" />
             <p>Video & Animation</p>
@@ -441,13 +470,13 @@
             <p>Lifestyle</p>
           </a>
         </div>
+
         <div class="market__items col-6 col-xl">
           <a href="#">
             <img src="./img/data.718910f.svg" alt="" />
             <p>Data</p>
           </a>
         </div>
-        
       </div>
     </section>
     <!-- TOOLS -->
@@ -555,7 +584,7 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item"> 
+          <div class="carousel-item">
             <div class="comment__container row">
               <div
                 class="comment__content_right col-12 col-sm-12 col-md-12 col-xl-4 col-lg-3"
@@ -563,7 +592,7 @@
                 <img
                   class="comment_sub"
                   src="./img/testimonial-video-still-naadam.jpg"
-                  class="d-block w-100 "
+                  class="d-block w-100"
                   alt="comment 1"
                 />
                 <span
@@ -672,7 +701,7 @@
                 </blockquote>
               </div>
             </div>
-          </div> 
+          </div>
         </div>
         <a
           class="carousel-control-prev"
@@ -861,19 +890,6 @@
             </span>
           </div>
         </div>
-
-        <!-- <div class="projects__card card">
-          <img src="./img/spickex.jpg" class="card-img-top" alt="" />
-          <div class="card-body">
-            <a href="#">
-              <img src="./img/project12.jpg" alt="" />
-            </a>
-            <span>
-              <b class="card-title"><a href="#">Flyer Design</a></b>
-              <a class="card-text" href="#">by&nbsp;<i>spickex</i></a>
-            </span>
-          </div>
-        </div> -->
       </div>
     </section>
 
@@ -917,14 +933,15 @@
     <!-- SIGNUP -->
     <section class="signup">
       <div class="signup__container row">
-        <div class="signup_content col-6">
+        <div class="signup_content col-12 col-lg-6">
           <div class="signup-content-text">
-            <h2>Find the <i>talent</i> needed to</h2>
-            <h3>get your business <i>growing.</i></h3>
+            <h2>
+              Find the <i>talent</i> needed to get your business <i>growing.</i>
+            </h2>
             <button class="btn_signup">Get Started</button>
           </div>
         </div>
-        <div class="signup-content-right col-6"></div>
+        <div class="signup-content-right col-12 col-lg-6"></div>
       </div>
     </section>
     <!-- ABOUT -->
@@ -932,7 +949,11 @@
       <div class="about_container">
         <div class="about_content row">
           <div class="col-5 col-sm-4 col-md-4 col-lg col-xl">
-            <h4>Categories</h4>
+            <h4>Categories
+              <!-- <span class="material-icons-outlined">
+                expand_more
+                </span> -->
+            </h4>
             <ul>
               <li><a href="#">Graphics & Design</a></li>
               <li><a href="#">Digital Marketing</a></li>
@@ -946,7 +967,7 @@
               <li><a href="#">Sitemap</a></li>
             </ul>
           </div>
-          <div class="col-5 col-sm-4 col-md-4 col-lg col-xl">
+           <div class="col-5 col-sm-4 col-md-4 col-lg col-xl">
             <h4>About</h4>
             <ul>
               <li><a href="#">Careers</a></li>
@@ -979,9 +1000,6 @@
               <li><a href="#">Affiliates</a></li>
               <li><a href="#">Invite a Friend</a></li>
               <li><a href="#">Become a Seller</a></li>
-              <!-- <li>
-                <a href="#">Fiverr Elevate <small>Exclusive Benefits</small></a>
-              </li> -->
             </ul>
           </div>
           <div class="col-5 col-sm-4 col-md-4 col-lg col-xl">
