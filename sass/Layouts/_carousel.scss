@@ -9,6 +9,10 @@
         height: 0;
         border-bottom: 30vw solid $color-green-4;
         border-left: 80vw solid transparent;
+        @media (max-width:1440px) {
+            border-bottom: 41vw solid $color-green-4;
+            border-left: 82vw solid transparent;
+        }
     }
     .carousel__content {
         // position: relative;
@@ -154,15 +158,20 @@
     }
 }
 //------------Responsive PC---------------//
-// @include responsive ("extra-large"){
-//     .carousel{
-//         .carousel__content{
-//             .carousel__header{
-//                 background-color: white;
-//             }
-//         }
-//     }
-// }
+@include responsive("extra-large") {
+    .carousel {
+        .carousel__triangle {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-bottom: 29vw solid $color-green-4;
+            border-left: 80vw solid transparent;
+        }
+    }
+}
+
 //------------Responsive Mobile---------------//
 @include responsive("small") {
     .carousel {
@@ -240,14 +249,14 @@
                 display: none;
             }
         }
-        .carousel__brands{
-            .carousel-text{
+        .carousel__brands {
+            .carousel-text {
                 display: none;
             }
             img {
                 padding: 0px 10px;
             }
-            .img-hidden{
+            .img-hidden {
                 display: none;
             }
         }

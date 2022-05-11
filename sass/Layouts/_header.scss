@@ -18,28 +18,28 @@ header {
         align-items: center;
         justify-content: space-between;
         padding: 0;
-    
+
         .header__left {
             display: flex;
             align-items: center;
             padding: 0;
             .header__logo {
                 flex-grow: 0;
-                padding: 15px 15px 15px 0; 
+                padding: 15px 15px 15px 0;
                 img {
                     vertical-align: baseline;
                 }
             }
-            .header__search{
+            .header__search {
                 position: relative;
                 flex-grow: 1;
-                .form-control{
+                .form-control {
                     border-radius: 3px 0 0 3px;
                     padding: 8px 0 8px 28px;
-                    &:focus{
+                    &:focus {
                         border-color: #ced4da;
                         box-shadow: 0 0 0 0;
-                     }
+                    }
                 }
                 button {
                     @include styleButton($color-trans, $color-green-1, 8px, 16px, 0);
@@ -63,6 +63,7 @@ header {
         }
         .header__right {
             justify-content: flex-end;
+
             .nav-item {
                 list-style: none;
                 .nav-link {
@@ -71,16 +72,16 @@ header {
                     padding-left: 10px;
                     padding-right: 10px;
                     letter-spacing: 0.5px;
-                    img{
-                        vertical-align:top;
+                    img {
+                        vertical-align: top;
                     }
-                    &:hover{
+                    &:hover {
                         color: $color-green-2;
                     }
                 }
                 .fiverrPro {
                     color: #1e1692;
-                    &:hover{
+                    &:hover {
                         color: $color-green-2;
                     }
                 }
@@ -91,28 +92,35 @@ header {
                     font-size: $fs-2;
                 }
             }
+            .nav-item-1{
+                display: none;
+            }
+        }
+
+        .icon__menu {
+            color: $color-gray-6;
+            font-size: $fs-h2;
+            line-height: 80px;
+            float: right;
+            cursor: pointer;
+            display: none; /* ẩn*/
         }
     }
-    .header__categories{
-            border-top: 1px #e5e5e5 solid;
+    .header__categories {
+        border-top: 1px #e5e5e5 solid;
 
-            div{
-                max-width: 1440px;
-                width: 90%;
-                margin: 0 auto;
-                a{
-                    color: $color-gray-7;
-                    padding: 8px 0;
-                    text-align: center;
-                    font-size: $fs-0;
-                    font-weight: $fw-normal;
-                    line-height: 24px;
-                }
+        div {
+            max-width: 1440px;
+            width: 90%;
+            margin: 0 auto;
+            a {
+                color: $color-gray-7;
+                padding: 8px 0;
+                text-align: center;
+                font-size: $fs-0;
+                font-weight: $fw-normal;
+                line-height: 24px;
             }
-            
         }
+    }
 }
-
-
-
-

@@ -90,6 +90,7 @@
             </div>
           </form>
         </div>
+
         <ul class="navbar navbar-expand-sm header__right col-8 mr-auto">
           <li class="nav-item">
             <a class="nav-link fiverrPro" href="#"> Fiverr BusIness </a>
@@ -115,7 +116,14 @@
           <li class="nav-item">
             <button class="btn btn-outline-success">Join</button>
           </li>
+          <li class="nav-item-1">
+            <button class="btn btn-outline-success">JoIn FIverr</button>
+          </li>
         </ul>
+
+        <label class="icon__menu" id="icon">
+          <i class="fas fa-bars"></i>
+        </label>
       </nav>
       <div class="header__categories">
         <div class="row">
@@ -949,7 +957,8 @@
       <div class="about_container">
         <div class="about_content row">
           <div class="col-5 col-sm-4 col-md-4 col-lg col-xl">
-            <h4>Categories
+            <h4>
+              Categories
               <!-- <span class="material-icons-outlined">
                 expand_more
                 </span> -->
@@ -967,7 +976,7 @@
               <li><a href="#">Sitemap</a></li>
             </ul>
           </div>
-           <div class="col-5 col-sm-4 col-md-4 col-lg col-xl">
+          <div class="col-5 col-sm-4 col-md-4 col-lg col-xl">
             <h4>About</h4>
             <ul>
               <li><a href="#">Careers</a></li>
@@ -1084,9 +1093,14 @@
     </footer>
 
     <!-- -----===== BODY END =====----- -->
-
-    <!-- Optional JavaScript -->
+    ------------------
+    =               =
+    =               =
+    ------------------
+    <!-- Optional Main JavaScript -->
+    <script src="./js/main.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -1105,6 +1119,7 @@
     <!-- OWL CAROUSEL -->
     <script src="./js/owl.carousel.min.js"></script>
 
+    <!-- ==================== Show Menu Header Search PC ==================== -->
     <script>
       $(document).ready(function () {
         $(function () {
@@ -1114,7 +1129,7 @@
           $(window).scroll(function () {
             if (window.scrollY === 0) {
               $(".header__search").hide();
-              document.querySelector(".header__content").style.height = "80px";
+              document.querySelector(".header__content").style.height = "";
             } else {
               $(".header__search").show();
               document.querySelector(".header__content").style.height = "80px";
@@ -1123,6 +1138,7 @@
         });
       });
     </script>
+    <!-- ==================== Scroll Menu mini PC ==================== -->
     <script>
       $(".header__categories").hide();
       var popularCarousel = document.querySelector(
@@ -1138,27 +1154,7 @@
         }
       });
     </script>
-    <script>
-      var carouselIndex = 0;
-      var layOverItem = document.querySelectorAll(".carousel__layOver--item");
-      layOverItem[carouselIndex].style.opacity = 1;
-      var autoChangeImg = function () {
-        layOverItem[carouselIndex].style.opacity = 1;
-        carouselIndex++;
-        if (carouselIndex >= layOverItem.length) {
-          carouselIndex = 0;
-        }
-        setTimeout(function () {
-          if (carouselIndex == 0) {
-            layOverItem[5].style.opacity = 0;
-          } else {
-            layOverItem[carouselIndex - 1].style.opacity = 0;
-          }
-        }, 3800);
-      };
-      setInterval(autoChangeImg, 4000);
-    </script>
-
+    <!-- ==================== Responsive SERVICES & PROJECTS ITEM SHOW ==================== -->
     <script>
       $(document).ready(function () {
         $(".services__content").owlCarousel({
@@ -1200,6 +1196,7 @@
         });
       });
     </script>
+
     <!-- MODAL VIDEO JS -->
     <script src="./js/jquery-modal-video.min.js"></script>
     <script>
@@ -1208,6 +1205,15 @@
 
     <script>
       $(".video-play").modalVideo();
+    </script>
+
+    <!-- ==================== SHOW MENU MOBILE ==================== -->
+    <script>
+      $(document).ready(function () {
+        $("#icon").click(function () {
+          $(".header__right").toggleClass("show");
+        });
+      });
     </script>
   </body>
 </html>
