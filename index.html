@@ -10,15 +10,6 @@
     />
     <!-- Google font -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Google Icons -->
-    <link
       href="https://fonts.googleapis.com/css2?family=Material+Icons"
       rel="stylesheet"
     />
@@ -46,11 +37,9 @@
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -956,14 +945,17 @@
     <section class="about">
       <div class="about_container">
         <div class="about_content row">
-          <div class="col-5 col-sm-4 col-md-4 col-lg col-xl">
-            <h4>
+          <div
+            class="col-12 col-sm-4 col-md-4 col-lg col-xl about__content__menu about__open"
+          >
+            <h4 class="about__header">
               Categories
-              <!-- <span class="material-icons-outlined">
-                expand_more
-                </span> -->
+              <span class="about__icon">
+                <i class="fas fa-chevron-down"></i>
+              </span>
             </h4>
-            <ul>
+
+            <ul class="about__list">
               <li><a href="#">Graphics & Design</a></li>
               <li><a href="#">Digital Marketing</a></li>
               <li><a href="#">Writing & Translation</a></li>
@@ -976,9 +968,18 @@
               <li><a href="#">Sitemap</a></li>
             </ul>
           </div>
-          <div class="col-5 col-sm-4 col-md-4 col-lg col-xl">
-            <h4>About</h4>
-            <ul>
+
+          <div
+            class="col-12 col-sm-4 col-md-4 col-lg col-xl about__content__menu about__close"
+          >
+            <h4 class="about__header">
+              About
+              <span class="about__icon">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </h4>
+
+            <ul class="about__list">
               <li><a href="#">Careers</a></li>
               <li><a href="#">Press & News</a></li>
               <li><a href="#">Partnerships</a></li>
@@ -988,18 +989,32 @@
               <li><a href="#">Investor Relations</a></li>
             </ul>
           </div>
-          <div class="col-5 col-sm-4 col-md-4 col-lg col-xl">
-            <h4>Support</h4>
-            <ul>
+          <div
+            class="col-12 col-sm-4 col-md-4 col-lg col-xl about__content__menu about__close"
+          >
+            <h4 class="about__header">
+              Support
+              <span class="about__icon">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </h4>
+            <ul class="about__list">
               <li><a href="#">Help & Support</a></li>
               <li><a href="#">Trust & Safety</a></li>
               <li><a href="#">Selling on Fiverr</a></li>
               <li><a href="#">Buying on Fiverr</a></li>
             </ul>
           </div>
-          <div class="col-5 col-sm-4 col-md-4 col-lg col-xl">
-            <h4>Community</h4>
-            <ul>
+          <div
+            class="col-12 col-sm-4 col-md-4 col-lg col-xl about__content__menu about__close"
+          >
+            <h4 class="about__header">
+              Community
+              <span class="about__icon">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </h4>
+            <ul class="about__list">
               <li><a href="#">Events</a></li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">Forum</a></li>
@@ -1011,9 +1026,16 @@
               <li><a href="#">Become a Seller</a></li>
             </ul>
           </div>
-          <div class="col-5 col-sm-4 col-md-4 col-lg col-xl">
-            <h4>More From Fiverr</h4>
-            <ul>
+          <div
+            class="col-12 col-sm-4 col-md-4 col-lg col-xl about__content__menu about__close"
+          >
+            <h4 class="about__header">
+              More From Fiverr
+              <span class="about__icon">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </h4>
+            <ul class="about__list">
               <li><a href="#">Fiverr Business</a></li>
               <li><a href="#">Fiverr Pro</a></li>
               <li><a href="#">Fiverr Studios</a></li>
@@ -1093,12 +1115,13 @@
     </footer>
 
     <!-- -----===== BODY END =====----- -->
-    ------------------
+    <!-- ------------------
     =               =
     =               =
-    ------------------
+    ------------------ -->
     <!-- Optional Main JavaScript -->
     <script src="./js/main.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script
@@ -1116,6 +1139,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
     <!-- OWL CAROUSEL -->
     <script src="./js/owl.carousel.min.js"></script>
 
