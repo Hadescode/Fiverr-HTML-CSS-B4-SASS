@@ -100,26 +100,26 @@
                 }
             }
         } 
-        @include responsive('small'){
-            .guides_title{
-                display: flex;
-                justify-content: space-between;
-                h2{
-                    @include styleText($color-black-0,$fs-h2,$fw-bold-0);
-                    padding-bottom: 20px;
-                    
-                }
-                a{
-                    padding-top: 8px;
-                    font-size: $fs-2;
-                }
-                i{
-                    font-size: $fs-1;
-                }
-            }
-            &:hover a{
-                text-decoration: none;
-            }
-        }
     }  
+}
+@include responsive('small'){
+    .guides_title{
+        display: flex;
+        justify-content: space-between;
+        h2{
+            @include styleText($color-black-0,$fs-h2,$fw-bold-0);
+            padding-bottom: 20px;
+            
+        }
+        a{
+            padding-top: 8px;
+            font-size: $fs-2;
+        }
+        i{
+            font-size: $fs-1;
+        }
+    }
+    &:hover a{
+        text-decoration: none;
+    }
 }

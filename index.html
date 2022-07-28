@@ -35,10 +35,8 @@
     />
 
     <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
 
     <!-- Bootstrap CSS -->
     <link
@@ -62,7 +60,7 @@
     <!-- HEADER -->
     <header>
       <nav class="navbar navbar-expand-sm navbar-expand-lg header__content">
-        <div class="header__left col-4">
+        <div class="header__left col-4 col-sm-4 col-md-8 col-xl-4">
           <a class="header__logo" href="#">
             <img src="./img/fiverr.svg" alt="" />
           </a>
@@ -80,29 +78,29 @@
           </form>
         </div>
 
-        <ul class="navbar navbar-expand-sm header__right col-8 mr-auto">
+        <ul class="header__right navbar navbar-expand-sm mr-auto col-8 col-sm-8 col-md-4 col-xl-8">
           <li class="nav-item">
             <a class="nav-link fiverrPro" href="#"> Fiverr BusIness </a>
-          </li>
+          </li> 
           <li class="nav-item">
             <a class="nav-link" href="#"> Explore </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item nav-item-english">
             <a class="nav-link" href="#">
               <img src="./img/globe.svg" alt="" />
               <span>English</span>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item nav-item-USD">
             <a class="nav-link" href="#"> $USD </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"> Become a Seller </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item nav-item-SignIn">
             <a class="nav-link" href="#"> Sign In </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item nav-item-Join">
             <button class="btn btn-outline-success">Join</button>
           </li>
           <li class="nav-item-1">
@@ -410,28 +408,28 @@
     <section class="market">
       <h2>Explore the marketplace</h2>
       <div class="row">
-        <div class="market__items col-6 col-xl-3">
+        <div class="market__items col-6 col-md-4 col-xl-3">
           <a href="#">
             <img src="./img/graphics-design.d32a2f8.svg" alt="" />
             <p>Graphics & Design</p>
           </a>
         </div>
 
-        <div class="market__items col-6 col-xl-3">
+        <div class="market__items col-6 col-md-4 col-xl-3">
           <a href="#">
             <img src="./img/online-marketing.74e221b.svg" alt="" />
             <p>Digital Marketing</p>
           </a>
         </div>
 
-        <div class="market__items col-6 col-xl-3">
+        <div class="market__items col-6 col-md-4 col-xl-3">
           <a href="#">
             <img src="./img/writing-translation.32ebe2e.svg" alt="" />
             <p>Writing & Translation</p>
           </a>
         </div>
 
-        <div class="market__items col-6 col-xl-3">
+        <div class="market__items col-6 col-md-4 col-xl-3">
           <a href="#">
             <img src="./img/video-animation.f0d9d71.svg" alt="" />
             <p>Video & Animation</p>
@@ -440,35 +438,35 @@
       </div>
 
       <div class="row">
-        <div class="market__items col-6 col-xl">
+        <div class="market__items col-6 col-md-4 col-xl">
           <a href="#">
             <img src="./img/music-audio.320af20.svg" alt="" />
             <p>Music & Audio</p>
           </a>
         </div>
 
-        <div class="market__items col-6 col-xl">
+        <div class="market__items col-6 col-md-4 col-xl">
           <a href="#">
             <img src="./img/programming.9362366.svg" alt="" />
             <p>Programming & Tech</p>
           </a>
         </div>
 
-        <div class="market__items col-6 col-xl">
+        <div class="market__items col-6 col-md-4 col-xl">
           <a href="#">
             <img src="./img/business.bbdf319.svg" alt="" />
             <p>Business</p>
           </a>
         </div>
 
-        <div class="market__items col-6 col-xl">
+        <div class="market__items col-6 col-md-4 col-xl">
           <a href="#">
             <img src="./img/lifestyle.745b575.svg" alt="" />
             <p>Lifestyle</p>
           </a>
         </div>
 
-        <div class="market__items col-6 col-xl">
+        <div class="market__items col-6 col-md-4 col-xl">
           <a href="#">
             <img src="./img/data.718910f.svg" alt="" />
             <p>Data</p>
@@ -1084,18 +1082,18 @@
           <div
             class="footer__items__left col-12 col-sm-12 col-md-12 col-lg-7 col-xl-6"
           >
-            <ul>
+            <ul class="footer__icon">
               <li class="twister">
                 <a href=""><i class="fab fa-twitter"></i></a>
               </li>
               <li class="facebook">
-                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-facebook"></i></i></a>
               </li>
               <li class="linkedin">
-                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
               </li>
               <li class="pinterest">
-                <a href=""><i class="fab fa-pinterest-p"></i></a>
+                <a href=""><i class="fab fa-pinterest"></i></a>
               </li>
               <li class="insta">
                 <a href=""><i class="fab fa-instagram"></i></a>
@@ -1103,11 +1101,13 @@
             </ul>
             <div class="footer__button">
               <button class="btn_select">
-                <span class="img"><img src="./img/USA.png" alt="" /></span>
-                <span class="label">English</span>
-                <span class="label1">$USD</span>
+                <span class="footer__img"><img src="./img/globe.svg" alt="" /></span>
+                <span class="footer__label">English</span>
               </button>
-              <!-- <button class="btn_select">$USD</button> -->
+              <button class="btn_select btn__label">$USD</button>
+              <button class="btn_circle">
+                <i class="fas fa-child"></i>
+              </button>
             </div>
           </div>
         </div>
@@ -1192,7 +1192,7 @@
               items: 1,
             },
             600: {
-              items: 3,
+              items: 2,
             },
             1000: {
               items: 5,
@@ -1211,7 +1211,7 @@
               items: 1,
             },
             600: {
-              items: 3,
+              items: 2,
             },
             1000: {
               items: 4,

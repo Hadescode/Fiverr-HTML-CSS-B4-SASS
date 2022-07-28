@@ -1,7 +1,7 @@
 //7/9/2020
 .btn_banner{
     @include styleButton($color-white-0,$color-white-0,$pd-1,$pd-2 +4,$border-radius + 3);
-    @include styleText($color-blue-1, $fs-3  ,$fw-bold);
+    @include styleText($color-blue-1, $fs-3 ,$fw-bold);
     // font-family:"Helvetica Neue";
     &:hover{
         
@@ -28,7 +28,7 @@
 }
 
 .btn_select{
-    @include styleButton($color-white-0,$color-white-0,$pd-0 - 1,$pd-1,$border-radius + 54);
+    @include styleButton($color-white-0,$color-white-0,$pd-0,$pd-1,$border-radius + 54);
     @include styleText($color-gray-7,$fs-1,$fw-bold);
     &:hover{
         @include styleButton($color-gray-9,$color-gray-9,$pd-0 - 1,$pd-1,$border-radius + 54);

@@ -63,9 +63,11 @@ header {
         }
         .header__right {
             justify-content: flex-end;
-
+            margin-bottom: 0;
+            z-index: 1;
             .nav-item {
                 list-style: none;
+                font-size: $fs-3  - 1;
                 .nav-link {
                     color: $color-gray-6;
                     height: 30px;
@@ -100,7 +102,7 @@ header {
         .icon__menu {
             color: $color-gray-6;
             font-size: $fs-h2;
-            line-height: 80px;
+            line-height: 60px;
             float: right;
             cursor: pointer;
             display: none; /* ẩn*/

@@ -171,7 +171,97 @@
         }
     }
 }
-
+//------------Responsive Tablet---------------//
+@include responsive ("medium"){
+    .carousel {
+        background-color: $color-green-6;
+        .carousel__triangle {
+            border-bottom: 84vw solid $color-green-6;
+            border-left: 100vw solid transparent;
+        }
+        .carousel__content {
+            max-width: 1440px;
+            margin: 0 auto;
+            height: 366px !important;
+            padding-top: 100px;
+            .carousel__header {
+                position: absolute;
+                box-sizing: content-box;
+                max-width: 543px;
+                width: auto;
+                height: 366px;
+                padding: 0px 0 0 16%;
+                h1 {
+                    @include styleText($color-white-0, $fs-h1 + 4, $fw-bold-0);
+                    line-height: 120%;
+                    margin: 0;
+                    padding-bottom: 20px;
+                    i {
+                        font-family: "Helvetica Neue";
+                    }
+                }
+                .carousel__form {
+                    flex-direction: column;
+                    gap: 10px;
+                    .form-control {
+                        width: 93%;
+                        border-radius: 5px !important;
+                        padding: 8px 7px 7px 44px;
+                        height: 48px;
+                        letter-spacing: normal;
+                        word-spacing: normal;
+                        text-transform: none;
+                        text-indent: 0px;
+                        text-shadow: none;
+                        display: inline-block;
+                        text-align: start;
+                        &:focus {
+                            border-color: #ced4da;
+                            box-shadow: 0 0 0 0;
+                        }
+                    }
+                    .btn-carousel-search {
+                        width: 93%;
+                        @include styleButton($color-trans, $color-green-1, 12px, 24px, 0);
+                        color: $color-white-0;
+                        border-radius: 5px;
+                        font-weight: $fw-bold-0;
+                        font-size: $fs-0;
+                        line-height: normal;
+                        &:hover {
+                            @include styleButton($color-trans, $color-green-2, 12px, 24px, 0);
+                            color: $color-white-0;
+                            border-radius: 0 3px 3px 0;
+                            font-weight: $fw-bold-0;
+                            font-size: $fs-0;
+                            line-height: normal;
+                        }
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+            }
+            .carousel__header--popular {
+                display: none !important;
+            }
+            .carousel__layOver {
+                display: none;
+            }
+        }
+        .carousel__brands {
+            .carousel-text {
+                display: none;
+            }
+            img {
+                padding: 0px 10px;
+            }
+            .img-hidden {
+                display: none;
+            }
+        }
+    }
+}
 //------------Responsive Mobile---------------//
 @include responsive("small") {
     .carousel {

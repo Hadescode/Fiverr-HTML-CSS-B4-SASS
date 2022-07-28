@@ -103,3 +103,50 @@
         }
     }
 }
+
+@include responsive ("medium"){
+    .intro{
+        padding: 42px 0 0 0;
+        .intro_Container{
+            margin-bottom: 50px;
+            padding-bottom: 50px;
+            .intro__left{
+                padding-right: 5%;
+                padding-left: 0;
+                h2{
+                    @include styleText($color-black-1,$fs-h1 - 2,$fw-bold-1);
+                    line-height: 38px;
+                    padding-bottom: 24px;
+                }
+                h4{
+                    @include styleText($color-black-1,$fs-4 + 2px ,$fw-bold-1);
+                    margin: 0;
+                    padding-bottom: 4px;
+                    i{
+                        box-sizing: content-box;
+                        width: 16px;
+                        height: 16px;
+                        color: $color-gray-6;
+                        padding-right: 10px;
+                    }
+                    span{
+                        @include styleText($color-black-1,$fs-3,$fw-bold-1);
+                    }
+                }
+                p{
+                    @include styleText($color-gray-6,$fs-3 + 2,$fw-normal);
+                    margin: 0;
+                    padding-bottom: 24px;
+                }
+            }
+            // .intro__right{
+            //     background-image: url(../img/selling-proposition-still-1400-x1.png);
+            //     background-repeat: no-repeat;
+            //     background-position: center;
+            //     height: 240px;
+            //     position: relative;
+            //     background-size: contain;
+            // }
+        }
+    }
+}
