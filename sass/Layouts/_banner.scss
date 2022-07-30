@@ -49,7 +49,7 @@
         }
     }
 }
-//------------Responsive mobile------------//
+//------------Responsive ( Mobile:"576px")------------//
 @include responsive("small") {
     .banner {
         background-image: none;
@@ -81,6 +81,39 @@
             top: 72px;
             left: 15px;
             right: 0;
+        }
+    }
+}
+//------------Responsive ( ipad:"768px")------------//
+@include responsive ("medium"){
+    .banner {
+        background-image: none;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 580px;
+        max-width: 1440px;
+        width: 90%;
+        margin: 64px auto;
+        margin-bottom: 64px; // khoảng cách với section TOOLS
+        background-color: $color-blue-1;
+        .banner__content {
+            padding-top: 28px;
+            padding-right: 8%;
+            height: 0px;
+            p {
+                @include styleText($color-white-0, $fs-h2, $fw-normal);
+                padding-bottom: 10px;
+            }
+        }
+        .banner-img {
+            background-image: url(../../img/logo-maker-banner-tablet-852-2x.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100%;
+            height: 90vh;
+            left: 15px;
         }
     }
 }

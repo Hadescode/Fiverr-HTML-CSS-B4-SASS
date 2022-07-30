@@ -84,7 +84,10 @@
             }
         }
     }
-    @include responsive("extra-large") {
+}
+//------------Responsive ( PC & laptop:"1440px")------------//
+@include responsive("extra-large") {
+    .tools{
         .tools__content {
             .tools_content_right {
                 p {
@@ -93,17 +96,19 @@
                 }
             }
             .tools_content_left {
-                background-image: url(../img/ipadX2.gif);
+                background-image: url(../img/business-desktop-870-x1.png);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
                 width: 100%;
-                height: 72%;
-                margin-top: 30px;
+                height: 65%;
             }
         }
     }
-    @include responsive("large") {
+}
+//------------Responsive ( tablet:"1024px")------------//
+@include responsive("large") {
+    .tools {
         .tools__content {
             .tools_content_right {
                 h2 {
@@ -120,20 +125,23 @@
                 }
             }
             .tools_content_left {
-                background-image: url(../../img/business-desktop-870-x1.png);
+                background-image: url(../img/business-desktop-870-x1.png);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
                 width: 100%;
                 height: 56%;
-                margin-top: 65px;
             }
         }
     }
-    @include responsive("medium") {
+}
+//------------Responsive ( ipad:"768px")------------//
+@include responsive("medium") {
+    .tools {
         .tools__content {
             .tools_content_right {
                 max-width: none;
+                // padding-bottom: 0;
                 .tools-font {
                     padding-bottom: 20px;
                     padding-top: 40px;
@@ -146,7 +154,7 @@
                         }
                     }
                 }
-                .tools-text{
+                .tools-text {
                     padding-right: 0 !important;
                 }
             }
@@ -161,59 +169,60 @@
             }
         }
     }
-    @include responsive("small") {
-        .tools__content {
-            .tools_content_right {
-                padding-bottom: 0px;
-                .tools-business-logo {
-                    padding-top: 20px;
-                    .logo-color {
-                        height: 21px;
-                    }
-                    small {
-                        font-size: 28px;
-                        color: white;
-                        padding-top: 3px;
-                        padding-left: 5px;
-                    }
-                    &::after {
-                        content: "NEW";
-                        color: white;
-                        border: 1px #0d084d solid;
-                        background-color: #584aff;
-                        border-radius: 15px;
-                        font-size: 10px;
-                        padding: 0px 8px;
-                        font-weight: 600;
-                        margin-left: 8px;
-                    }
+}
+//------------Responsive ( Mobile:"576px")------------//
+@include responsive("small") {
+    .tools__content {
+        .tools_content_right {
+            padding-bottom: 0px;
+            .tools-business-logo {
+                padding-top: 20px;
+                .logo-color {
+                    height: 21px;
                 }
-                .tools-font {
-                    padding-bottom: 20px;
-                    padding-top: 40px;
-                    max-width: 420px;
-                    span {
-                        @include styleText($color-white-0, $fs-h2 + 4, $fw-bold);
-                        line-height: 38px;
-                        i {
-                            font-family: "Helvetica Neue";
-                        }
+                small {
+                    font-size: 28px;
+                    color: white;
+                    padding-top: 3px;
+                    padding-left: 5px;
+                }
+                &::after {
+                    content: "NEW";
+                    color: white;
+                    border: 1px #0d084d solid;
+                    background-color: #584aff;
+                    border-radius: 15px;
+                    font-size: 10px;
+                    padding: 0px 8px;
+                    font-weight: 600;
+                    margin-left: 8px;
+                }
+            }
+            .tools-font {
+                padding-bottom: 20px;
+                padding-top: 40px;
+                max-width: 420px;
+                span {
+                    @include styleText($color-white-0, $fs-h2 + 4, $fw-bold);
+                    line-height: 38px;
+                    i {
+                        font-family: "Helvetica Neue";
                     }
                 }
             }
-            .tools_content_left {
-                background-image: url(../img/business-mobile-552-x1.webp);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
+        }
+        .tools_content_left {
+            background-image: url(../img/business-mobile-552-x1.webp);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 100%;
+            height: 90%;
+            margin-top: 35px;
+            padding: 50%;
+            @media screen and (min-width: 1200px) and (max-width: 1440px) {
                 width: 100%;
-                height: 90%;
-                margin-top: 35px;
-                padding: 50%;
-                @media screen and (min-width: 1200px) and (max-width: 1440px) {
-                    width: 100%;
-                    height: 83%;
-                }
+                height: 83%;
             }
         }
     }
