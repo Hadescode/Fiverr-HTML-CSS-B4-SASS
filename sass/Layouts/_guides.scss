@@ -1,125 +1,119 @@
-.guides{
+.guides {
     max-width: 1440px;
     width: 90%;
     margin: 64px auto;
-    // margin-bottom: 160px;
-    margin-top:6%;
-    .guides__container{
-        .guides_title{
+    margin-top: 6%;
+    .guides__container {
+        .guides_title {
             display: flex;
             justify-content: space-between;
-            h2{
-                @include styleText($color-black-0,$fs-h2,$fw-bold-0);
+            h2 {
+                @include styleText($color-black-0, $fs-h2, $fw-bold-0);
                 padding-bottom: 20px;
-                
             }
-            a{
+            a {
                 padding-top: 12px;
                 font-size: $fs-3;
             }
-            i{
+            i {
                 font-size: $fs-3 - 2;
             }
         }
-        &:hover a{
+        &:hover a {
             text-decoration: none;
         }
-        .guides__content{
-            .guides__overlayer{
-                img{
+        .guides__content {
+            .guides__overlayer {
+                img {
                     width: 100%;
                     padding-bottom: 30px;
                 }
                 &:hover img {
-                    opacity: .85;
+                    opacity: 0.85;
                     transition: all 1s;
                 }
             }
-            .guides__items{
-                h4{
-                    @include styleText($color-black-1,$fs-4 - 2,$fw-bold-0);
+            .guides__items {
+                h4 {
+                    @include styleText($color-black-1, $fs-4 - 2, $fw-bold-0);
                 }
-                p{
-                    @include styleText($color-gray-7,$fs-3,$fw-normal);
-                    padding-bottom: 15px;
+                p {
+                    @include styleText($color-gray-7, $fs-3, $fw-normal);
                 }
-                @media screen and (min-width:1200px) and (max-width:1440px){
-                    h4{
-                        @include styleText($color-black-0,$fs-3,$fw-bold-0);
+                @media screen and (min-width: 1200px) and (max-width: 1440px) {
+                    h4 {
+                        @include styleText($color-black-0, $fs-3, $fw-bold-0);
                     }
-                    p{
-                        @include styleText($color-gray-7,$fs-3 - 2,$fw-normal);
+                    p {
+                        @include styleText($color-gray-7, $fs-3 - 2, $fw-normal);
                     }
                 }
             }
         }
-        @include responsive('extra-large'){
-            .guides__content{
-                .guides__overlayer{
-                    img{
+        @include responsive("extra-large") {
+            .guides__content {
+                .guides__overlayer {
+                    img {
                         width: 100%;
                         padding-bottom: 30px;
                     }
                     &:hover img {
-                        opacity: .85;
+                        opacity: 0.85;
                         transition: all 1s;
                     }
                 }
             }
-        } 
-        @include responsive('large'){
-            .guides__content{
-                .guides__overlayer{
-                    img{
+        }
+        @include responsive("large") {
+            .guides__content {
+                .guides__overlayer {
+                    img {
                         display: block;
                         width: 100%;
                         height: 76%;
                         padding-bottom: 30px;
                     }
                     &:hover img {
-                        opacity: .85;
+                        opacity: 0.85;
                         transition: all 1s;
                     }
                 }
             }
-        }  
-        @include responsive('medium'){
-            .guides__content{
-                .guides__overlayer{
-
-                    img{
-                        display: block;
-                        width: 100%;
-                        // height: 44%;
-                        padding-bottom: 30px;
-                    }
-                    &:hover img {
-                        opacity: .85;
-                        transition: all 1s;
-                    }
-                }
-            }
-        } 
-    }  
+        }
+    }
 }
-@include responsive('small'){
-    .guides_title{
+//------------Responsive ( Mobile:"576px")------------//
+@include responsive("small") {
+    .guides_title {
         display: flex;
         justify-content: space-between;
-        h2{
-            @include styleText($color-black-0,$fs-h2,$fw-bold-0);
+        h2 {
+            @include styleText($color-black-0, $fs-h2, $fw-bold-0);
             padding-bottom: 20px;
-            
         }
-        a{
+        a {
             padding-top: 8px;
             font-size: $fs-2;
         }
-        i{
+        i {
             font-size: $fs-1;
         }
     }
-    &:hover a{
+    &:hover a {
         text-decoration: none;
     }
 }
+//------------Responsive ( ipad:"768px")------------//
+@include responsive ("medium"){
+    .guides{
+        .guides__container{
+            .guides__content{
+                .guides__overlayer{
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+//------------Responsive ( tablet:"1024px")------------//
+//------------Responsive ( PC & laptop:"1440px")------------//

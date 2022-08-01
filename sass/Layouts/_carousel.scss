@@ -265,8 +265,9 @@
 //------------Responsive Mobile---------------//
 @include responsive("small") {
     .carousel {
+        background-color: $color-green-6;
         .carousel__triangle {
-            border-bottom: 84vw solid #2e6a3c;
+            border-bottom: 84vw solid $color-green-6;
             border-left: 100vw solid transparent;
         }
         .carousel__content {
@@ -282,7 +283,7 @@
                 height: 366px;
                 padding: 0px 0 0 30px;
                 h1 {
-                    @include styleText($color-black-1, $fs-h1 + 4, $fw-bold-0);
+                    @include styleText($color-white-0, $fs-h1, $fw-bold-0);
                     line-height: 120%;
                     margin: 0;
                     padding-bottom: 20px;
