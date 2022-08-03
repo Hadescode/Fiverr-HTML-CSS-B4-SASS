@@ -1557,27 +1557,23 @@ header .header__categories div a {
 
 @media screen and (max-width: 576px) {
   .banner {
-    background-image: none;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 580px;
-    max-width: 1440px;
-    width: 90%;
-    margin: 64px auto;
-    margin-bottom: 64px;
-    background-color: #4a73e8;
+    height: 635px;
   }
   .banner .banner__content {
     padding-top: 28px;
     padding-right: 8%;
     height: 0px;
+    height: 2px;
   }
-  .banner .banner__content p {
+  .banner .banner__content h2 {
     color: #fff;
-    font-size: 24px;
-    font-weight: normal;
-    padding-bottom: 10px;
+    font-size: 29px;
+    font-weight: 600;
+    padding: 26px 0 0;
+  }
+  .banner .banner__content h2 i {
+    font-family: "Helvetica Neue";
+    font-size: 35px;
   }
   .banner .banner-img {
     background-image: url(../img/logo-maker-banner-mobile-552-2x.png);

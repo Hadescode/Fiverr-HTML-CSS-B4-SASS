@@ -87,23 +87,20 @@
 //------------Responsive ( Mobile:"576px")------------//
 @include responsive("small") {
     .banner {
-        background-image: none;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 580px;
-        max-width: 1440px;
-        width: 90%;
-        margin: 64px auto;
-        margin-bottom: 64px; // khoảng cách với section TOOLS
-        background-color: $color-blue-1;
+        height: 635px;
         .banner__content {
             padding-top: 28px;
             padding-right: 8%;
             height: 0px;
-            p {
-                @include styleText($color-white-0, $fs-h2, $fw-normal);
-                padding-bottom: 10px;
+            height: 2px;
+            h2{
+                @include styleText($color-white-0, $fs-h1 - 3, $fw-bold-0);
+                padding: 26px 0 0;
+                i {
+                    font-family: "Helvetica Neue";
+                    font-size: $fs-h1 + 3;
+                }
+
             }
         }
         .banner-img {
