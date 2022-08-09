@@ -115,6 +115,101 @@
         }
     }
 }
+//------------Responsive ( laptop:"1024px")------------//
+@include responsive ("large"){
+    .comment {
+        .carousel {
+            .carousel-inner { 
+                .comment__container {
+                    height: 280px;
+                    .comment__content_left {
+                        .comment_container {
+                            padding-top: 20px;
+                            h2 {
+                                font-size: $fs-4;
+                                font-weight: 400;
+                                color: $color-gray-7;
+                            }
+                            .comment-img {
+                                border-left: 1px solid #c5c6c9;
+                                height: 36px;
+                                margin-left: $mg-1 + 6;
+                                img {
+                                    display: inline-block;
+                                    height: 36px;
+                                    margin-left: $mg-1 + 2;
+                                }
+                            }
+                        }
+                        blockquote{
+                            font-size: $fs-h2 + 4;
+                            line-height: 44px;
+                            font-family: Helvetica Neue;
+                            color: $color-green-5;
+                        }
+                    }
+                }
+            }
+            .carousel-control-prev {
+                justify-content: space-between;
+                background-color: $color-white-0;
+                border: 1px solid transparent;
+                border-radius: 50%;
+                height: 48px;
+                width: 48px;
+                top: 50%;
+                opacity: 1;
+                left: -20px;
+                padding-left: 11px;
+                box-shadow: -2px 0px 1px 1px #f5f5f5;
+                @media screen and (max-width: 576px) {
+                    top: 15%;
+                }
+                .carousel-control-prev-icon {
+                    background-image: url(../img/arrow-right-gray.svg);
+                    background-repeat: no-repeat;
+                    width: 16px;
+                    height: 22px;
+                    transform: rotate(-180deg);
+                    opacity: 1;
+                }
+            }
+            .carousel-control-next {
+                justify-content: flex-end;
+                background-color: $color-white-0;
+                border: 1px solid transparent;
+                height: 48px;
+                width: 48px;
+                border-radius: 50%;
+                opacity: 1;
+                top: 50%;
+                right: -20px;
+                padding-right: 11px;
+                box-shadow: 1px 1px 1px 1px #f5f5f5;
+                @media screen and (max-width: 576px) {
+                    top: 15%;
+                }
+                .carousel-control-next-icon {
+                    background-image: url(../img/arrow-right-gray.svg);
+                    background-repeat: no-repeat;
+                    width: 16px;
+                    height: 22px;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+//------------Responsive ( ipad:"768px")------------//
+@include responsive ("medium"){
+    .comment{
+        .carousel{
+            .carousel-inner{
+                height: 100vh;
+            }
+        }
+    }
+}
 //------------Responsive ( Mobile:"576px")------------//
 @include responsive ("small"){
     .comment{
@@ -161,15 +256,4 @@
         }
     }
 }
-//------------Responsive ( ipad:"768px")------------//
-@include responsive ("medium"){
-    .comment{
-        .carousel{
-            .carousel-inner{
-                height: 100vh;
-            }
-        }
-    }
-}
-//------------Responsive ( laptop:"1024px")------------//
 //------------Responsive ( PC & laptop:"1440px")------------//
